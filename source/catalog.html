@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header container">
+      <a class="page-header__logo logo">
+        <img class="page-header__logo-image logo__image" src="#" width="86" height="35" alt="Логотип сайта MISHKA">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="order.html">Вязание на заказ</a></li>
+          </ul>
+          <div class="main-nav__search search">
+            <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
+              <label class="search__input-label" for="search"><span class="visually-hidden">Поиск по сайту</span></label>
+              <input class="search__input" id="search" name="search" type="search" placeholder="Поиск по сайту">
+              <button class="search__btn visually-hidden" type="submit">Найти</button>
+            </form>
+          </div>
+          <div class="main-nav__cart cart">
+            <a class="cart__link" href="#">
+              <span class="cart__main-text">Корзина:</span>
+              <span class="cart__change-text">пока пуста</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <footer class="page-footer">
+      <div class="page-footer__wrapper container">
+        <section class="page-footer__social social">
+          <h2 class="visually-hidden">Мы в соц-сетях</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">
+                <span class="visually-hidden">Наш инстаграм</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">Наш фейсбук</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">Наш твиттер</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
