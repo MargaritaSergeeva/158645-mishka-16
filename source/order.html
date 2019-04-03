@@ -36,6 +36,62 @@
       <div class="inner-main-title__wrapper container">
         <h1 class="inner-main__title main-title">Вязание на заказ</h1>
       </div>
+      <div class="inner-main__form-wrapper form__wrapper">
+        <form class="inner-main__form form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+          <fieldset class="form__filters form__filters--type">
+            <legend class="form__field-name">Тип</legend>
+            <input class="form__radio-input visually-hidden" id="accessory" type="radio" name="item-type" value="accessory" checked>
+            <label class="form__radio-name" for="accessory">Аксессуар для интерьера</label>
+            <input class="form__radio-input visually-hidden" id="toys" type="radio" name="item-type" value="toys">
+            <label class="form__radio-name" for="toys">Детская игрушка</label>
+          </fieldset>
+          <fieldset class="form__filters form__filters--color">
+            <legend class="form__checkbox-name">Цвет</legend>
+            <input class="form__checkbox-input visually-hidden" id="white-color" type="checkbox" name="white" checked>
+            <label class="form__checkbox-name" for="white-color">Белый</label>
+            <input class="form__checkbox-input visually-hidden" id="gray-color" type="checkbox" name="gray" checked>
+            <label class="form__checkbox-name" for="gray-color">Серый</label>
+            <input class="form__checkbox-input visually-hidden" id="tiffany-color" type="checkbox" name="tiffany">
+            <label class="form__checkbox-name" for="tiffany-color">&laquo;Тиффани&raquo;</label>
+            <input class="form__checkbox-input visually-hidden" id="black-color" type="checkbox" name="black">
+            <label class="form__checkbox-name" for="black-color">Черный</label>
+            <input class="form__checkbox-input visually-hidden" id="pink-color" type="checkbox" name="pink">
+            <label class="form__checkbox-name" for="pink-color">Розовый</label>
+            <input class="form__checkbox-input visually-hidden" id="orange-color" type="checkbox" name="orange">
+            <label class="form__checkbox-name" for="orange-color">Оранжевый</label>
+          </fieldset>
+          <fieldset class="form__user-name">
+            <legend class="form__field-name">ФИО</legend>
+            <p class="form__input-block">
+              <label class="form__input-name" for="name">Имя:</label>
+              <input class="form__input" id="name" type="text" name="name" placeholder="Введите ваше имя*">
+            </p>
+            <p class="form__input-block">
+              <label class="form__input-name" for="surname">Фамилия:</label>
+              <input class="form__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию*">
+            </p>
+            <p class="form__input-block"></p>
+              <label class="form__input-name" for="patronymic">Отчество:</label>
+              <input class="form__input" id="patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
+            </p>
+          </fieldset>
+          <p class="form__input-block">
+            <label class="form__field-name" for="user-tel">Тел</label>
+            <input class="form__input" id="user-tel" type="tel" name="user-tel" placeholder="+7 XXX XXX XX XX*">
+          </p>
+          <p class="form__input-block">
+            <label class="form__field-name" for="user-email">E-mail</label>
+            <input class="form__input" id="user-email" type="email" name="user-email" placeholder="Ваш Email*">
+          </p>
+          <p class="form__input-block">
+            <label class="form__field-name" for="text">Доп</label>
+            <textarea class="form__field-text" id="text" name="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </p>
+          <small class="form__note">*Поля обязательны для заполнения</small>
+          <button class="form__submit button" type="submit">Отправить заказ</button>
+        </form>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
