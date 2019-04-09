@@ -1,5 +1,6 @@
 @import "normalize.scss";
 @import "variables.scss";
+@import "mixins.scss";
 @import "scaffolder.scss";
 
 @import "blocks/container.scss";
@@ -9,3 +10,5 @@
 
 @import "blocks/page-header.scss";
 @import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
