@@ -21,39 +21,21 @@
   width: 23px;
   height: 28px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    background-repeat: no-repeat;
-  }
-
-  &--instagram::after {
-    top: 3px;
-
-    width: 22px;
-    height: 21px;
-
+  &--instagram {
     background-image: url(../../img/icon-insta.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 
-  &--facebook::after {
-    left: 4px;
-
-    width: 15px;
-    height: 28px;
-
+  &--facebook {
     background-image: url(../../img/icon-fb.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 
-  &--twitter::after {
-    top: 4px;
-
-    width: 23px;
-    height: 20px;
-
+  &--twitter {
     background-image: url(../../img/icon-twitter.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 }
