@@ -1,0 +1,33 @@
+.categories__list {
+  @include list-reset;
+}
+
+.categories__link {
+  display: block;
+  padding-top: 30px;
+  padding-right: 175px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $color-white;
+  text-decoration: none;
+
+  background-color: $color-green;
+
+  &:hover {
+    padding-bottom: 35px;
+  }
+
+  &:active {
+    padding-bottom: 35px;
+
+    color: rgba($color-white, 0.3);
+  }
+
+  &--toys {
+    background-color: #46c1ae;
+  }
+}
