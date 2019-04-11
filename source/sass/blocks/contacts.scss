@@ -4,8 +4,7 @@
 
 .contacts__wrapper {
   padding-top: 45px;
-  padding-right: 30px;
-  padding-left: 30px;
+  @include indent-mobile;
 }
 
 .contacts__title {
@@ -81,6 +80,5 @@
 }
 
 .contacts__write-us-wrapper {
-  padding-right: 30px;
-  padding-left: 30px;
+  @include indent-mobile;
 }

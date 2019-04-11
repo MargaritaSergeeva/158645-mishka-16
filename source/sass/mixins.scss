@@ -4,3 +4,8 @@
 
   list-style: none;
 }
+
+@mixin indent-mobile {
+  padding-right: 30px;
+  padding-left: 30px;
+}

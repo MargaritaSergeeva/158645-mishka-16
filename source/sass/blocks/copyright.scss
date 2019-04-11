@@ -1,8 +1,7 @@
 .copyright {
   display: flex;
   padding-top: 22px;
-  padding-right: 30px;
-  padding-left: 30px;
+  @include indent-mobile;
 
   border-top: 1px solid #e5e5e5;
 }

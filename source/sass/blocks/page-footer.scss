@@ -6,8 +6,7 @@
 }
 
 .page-footer__wrapper {
-  padding-right: 30px;
-  padding-left: 30px;
+  @include indent-mobile;
 }
 
 .page-footer__social {

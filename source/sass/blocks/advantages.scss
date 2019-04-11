@@ -1,8 +1,7 @@
 .advantages {
+  @include indent-mobile;
   padding-top: 40px;
-  padding-right: 30px;
   padding-bottom: 35px;
-  padding-left: 30px;
 }
 
 .advantages__title {
