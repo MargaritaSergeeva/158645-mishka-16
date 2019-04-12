@@ -10,3 +10,7 @@ background-color: #f1f1f1;
 .inner-main__goods {
   @include indent-mobile;
 }
+
+.inner-main__video {
+  margin-bottom: 55px;
+}
