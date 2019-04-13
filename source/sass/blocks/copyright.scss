@@ -13,6 +13,10 @@
   line-height: 34px;
   color: $color-black;
   vertical-align: middle;
+
+  &:active {
+    color: rgba($color-black, 0.3);
+  }
 }
 
 .copyright__link {
