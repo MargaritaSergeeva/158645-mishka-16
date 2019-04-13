@@ -3,6 +3,8 @@
   width: auto;
   padding-top: 18px;
   padding-bottom: 18px;
+  padding-right: 0;
+  padding-left: 0;
 
   font-size: 17px;
   line-height: 20px;
@@ -14,6 +16,8 @@
 
   background-color: $color-white;
   border: 2px solid $main-color;
+
+  cursor: pointer;
 
   &:hover {
     color: $color-white;
