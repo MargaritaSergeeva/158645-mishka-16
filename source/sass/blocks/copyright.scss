@@ -1,7 +1,7 @@
 .copyright {
+  @include indent-mobile;
   display: flex;
   padding-top: 22px;
-  @include indent-mobile;
 
   border-top: 1px solid #e5e5e5;
 }

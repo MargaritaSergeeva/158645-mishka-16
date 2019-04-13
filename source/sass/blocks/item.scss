@@ -43,10 +43,10 @@
 }
 
 .item__description {
- margin: 0;
- margin-bottom: 20px;
+  margin: 0;
+  margin-bottom: 20px;
 
- font-size: 13px;
+  font-size: 13px;
 }
 
 .item__price-wrapper {
@@ -69,7 +69,7 @@
   height: 19px;
   margin-top: 3px;
 
-  background-image: url(../../img/icon-cart.svg);
+  background-image: url("../../img/icon-cart.svg");
   background-repeat: no-repeat;
   opacity: 0.2;
 }
