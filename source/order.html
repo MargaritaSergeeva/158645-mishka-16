@@ -3,14 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header container">
-      <a class="page-header__logo logo" href="index.html">
-        <img class="logo__image" src="http://placehold.it/150x100" width="86" height="35" alt="Логотип сайта MISHKA">
-      </a>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo" href="index.html">
+          <img class="logo__image" src="http://placehold.it/150x100" width="86" height="35" alt="Логотип сайта MISHKA">
+        </a>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -33,10 +38,10 @@
       </nav>
     </header>
     <main class="inner-main">
-      <div class="inner-main__title-wrapper container">
+      <div class="inner-main__title-wrapper">
         <h1 class="inner-main__title main-title">Вязание на заказ</h1>
       </div>
-      <div class="inner-main__form-wrapper">
+      <div class="inner-main__form-wrapper container">
         <form class="inner-main__form form" action="https://echo.htmlacademy.ru" method="post">
           <p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <fieldset class="form__filters form__filters--type">
@@ -47,7 +52,7 @@
             <label class="form__radio-name" for="toys">Детская игрушка</label>
           </fieldset>
           <fieldset class="form__filters form__filters--color">
-            <legend class="form__checkbox-name">Цвет</legend>
+            <legend class="form__field-name">Цвет</legend>
             <input class="form__checkbox-input visually-hidden" id="white-color" type="checkbox" name="white" checked>
             <label class="form__checkbox-name" for="white-color">Белый</label>
             <input class="form__checkbox-input visually-hidden" id="gray-color" type="checkbox" name="gray" checked>
@@ -117,8 +122,9 @@
         </section>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
+            <img class="copyright__link-image" src="http://placehold.it/150x100" width="27" height="34" alt="Сайт разработчика HTML Academy">
           </a>
         </div>
       </div>

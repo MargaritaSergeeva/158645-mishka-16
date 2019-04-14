@@ -1,0 +1,136 @@
+.form {
+  padding-top: 30px;
+  padding-bottom: 55px;
+}
+
+.form__intro {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.form__filters,
+.form__user-name {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.form__filters--type {
+  margin-bottom: 30px;
+}
+
+.form__field-name {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 700;
+  color: $color-green;
+  text-transform: uppercase;
+}
+
+.form__radio-name {
+  display: block;
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $color-black;
+}
+
+.form__checkbox-name {
+  display: block;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $color-black;
+}
+
+.form__input-block {
+  margin: 0;
+}
+
+.form__input-name {
+  display: block;
+  margin-bottom: 5px;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $color-black;
+}
+
+.form__input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border: none;
+  border-bottom: 2px solid $color-black;
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba($color-black, 0.3);
+  }
+
+  &:hover {
+    border-bottom: 2px solid $color-green;
+  }
+
+  &:focus {
+    border-bottom: 2px solid $color-green;
+  }
+}
+
+.form__field-text {
+  display: block;
+  width: 100%;
+  min-height: 140px;
+  margin-bottom: 15px;
+  padding: 20px 15px;
+
+  border: 2px solid $color-black;
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba($color-black, 0.3);
+  }
+
+  &:hover {
+    border: 2px solid $color-green;
+  }
+
+  &:focus {
+    border: 2px solid $color-green;
+  }
+}
+
+.form__note {
+  display: block;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__send-order {
+  width: 100%;
+}

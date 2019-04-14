@@ -1,0 +1,84 @@
+.contacts {
+  padding-bottom: 40px;
+}
+
+.contacts__wrapper {
+  @include indent-mobile;
+  padding-top: 45px;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 18px;
+  font-weight: 700;
+  color: $color-black;
+}
+
+.contacts__email {
+  display: flex;
+}
+
+.contacts__email-field {
+  width: 80px;
+}
+
+.contacts__email-value {
+  position: relative;
+
+  width: 180px;
+
+  color: $main-color;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: #62d1ba;
+  }
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__address {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.contacts__address-field {
+  width: 80px;
+}
+
+.contacts__address-value {
+  width: 160px;
+
+  font-style: normal;
+}
+
+.contacts__map {
+  margin-bottom: 40px;
+}
+
+.contacts__map-image {
+  display: block;
+  width: 320px;
+  height: 457px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contacts__write-us-wrapper {
+  @include indent-mobile;
+}

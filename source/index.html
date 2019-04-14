@@ -3,14 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header container">
-      <a class="page-header__logo logo">
-        <img class="logo__image" src="http://placehold.it/150x100" width="86" height="35" alt="Логотип сайта MISHKA">
-      </a>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo">
+          <img class="logo__image" src="http://placehold.it/150x100" width="86" height="35" alt="Логотип сайта MISHKA">
+        </a>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -34,10 +39,10 @@
     </header>
     <main class="index-main">
       <div class="index-main__title-wrapper container">
-        <h1 class="index-main__title main-title">Милые штуки ручной работы для дома</h1>
+        <h1 class="index-main__title main-title">Милые&nbsp;штуки ручной работы&nbsp;для&nbsp;дома</h1>
       </div>
-      <section class="index-main__categories categories">
-        <div class="categories__wrapper container">
+      <section class="index-main__categories categories container">
+        <div class="categories__wrapper">
           <h2 class="visually-hidden">Основные категории товаров</h2>
           <ul class="categories__list">
             <li class="categories__item">
@@ -49,21 +54,21 @@
           </ul>
         </div>
       </section>
-      <article class="index-main__popular-item popular-item">
-        <div class="popular-item__wrapper container">
+      <article class="index-main__popular-item popular-item container">
+        <div class="popular-item__wrapper">
           <h2 class="popular-item__title">Товар недели</h2>
           <h3 class="popular-item__item-title">Вязаные корзинки</h3>
           <p class="popular-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <table class="popular-item__list">
-            <tr>
+            <tr class="popular-item__list-item">
               <td class="popular-item__field">Цвет:</td>
               <td class="popular-item__value">«Тиффани»/серый</td>
             </tr>
-            <tr>
+            <tr class="popular-item__list-item">
               <td class="popular-item__field">Диаметр:</td>
               <td class="popular-item__value">25 см</td>
             </tr>
-            <tr>
+            <tr class="popular-item__list-item">
               <td class="popular-item__field">Высота:</td>
               <td class="popular-item__value">15 см</td>
             </tr>
@@ -91,30 +96,30 @@
           </div>
         </div>
       </article>
-      <section class="index-main__advantages advantages">
-        <div class="advantages__wrapper container">
-          <h2 class="visually-hidden">Наши преимущества</h2>
+      <section class="index-main__advantages advantages container">
+        <div class="advantages__wrapper">
+          <h2 class="advantages__title">Коротко о нас:</h2>
           <ul class="advantages__list">
-            <li class="advantages__item advantages__item--eco">Экологически чистые материалы</li>
+            <li class="advantages__item advantages__item--eco">Экологически чистые&nbsp;материалы</li>
             <li class="advantages__item advantages__item--style">Скандинавский стиль по российской цене</li>
-            <li class="advantages__item advantages__item--like">Увеличивает лайки на фотографиях</li>
+            <li class="advantages__item advantages__item--like">Увеличивает лайки на&nbsp;фотографиях</li>
             <li class="advantages__item advantages__item--handmade">Связано вручную с любовью и умилением</li>
-            <li class="advantages__item advantages__item--russian">Поддержка отечественного производителя</li>
+            <li class="advantages__item advantages__item--russian">Поддержка&nbsp;отечественного производителя</li>
             <li class="advantages__item advantages__item--gift">Поставляется в подарочной упаковке</li>
           </ul>
         </div>
       </section>
-      <section class="index-main__rewiews reviews">
-        <div class="reviews__wrapper slider container">
+      <section class="index-main__rewiews reviews container">
+        <div class="reviews__wrapper">
           <h2 class="reviews__title">Отзывы</h2>
-          <div class="slider__item">
+          <div class="reviews__block">
             <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <b class="reviews__autor">Анастасия Красильникова</b>
+            <b class="reviews__author">Анастасия Красильникова</b>
             <a class="reviews__nickname" href="#">@misssssiskras</a>
           </div>
-          <div class="reviews__buttons slider__buttons">
-            <button class="slider__button slider__button--prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
-            <button class="slider__button slider__button--next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
+          <div class="reviews__buttons switcher">
+            <button class="switcher__button switcher__button--prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
+            <button class="switcher__button switcher__button--next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
           </div>
           <a class="reviews__write button" href="add-rewiew.html">Написать</a>
         </div>
@@ -128,7 +133,7 @@
           </div>
           <div class="contacts__address">
             <span class="contacts__address-field">адрес:</span>
-            <address class="contacts__address-value">г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</address>
+            <address class="contacts__address-value">г. Санкт-Петербург, ул. Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</address>
           </div>
         </div>
         <div class="contacts__map">
@@ -163,8 +168,9 @@
         </section>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
+            <img class="copyright__link-image" src="http://placehold.it/150x100" width="27" height="34" alt="Сайт разработчика HTML Academy">
           </a>
         </div>
       </div>

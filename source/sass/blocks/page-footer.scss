@@ -1,0 +1,14 @@
+.page-footer {
+  padding-top: 25px;
+  padding-bottom: 20px;
+
+  background-color: #f1f1f1;
+}
+
+.page-footer__wrapper {
+  @include indent-mobile;
+}
+
+.page-footer__social {
+  margin-bottom: 25px;
+}
