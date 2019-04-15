@@ -4,8 +4,6 @@
   .site-wrapper {
     position: relative;
 
-    background-image: linear-gradient(#ffffff 85px, #f9f9f9 85px, #f9f9f9 835px, #ffffff 835px);
-
     &::after {
       content: "";
       position: absolute;
@@ -29,6 +27,7 @@
 @media (min-width: $width-desktop) {
 
   .site-wrapper {
+    background-image: linear-gradient(#ffffff 85px, #f9f9f9 85px, #f9f9f9 850px, #ffffff 850px);
 
     &::after {
       display: none;

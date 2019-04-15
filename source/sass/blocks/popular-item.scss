@@ -1,10 +1,13 @@
 .popular-item {
-  @include indent-mobile;
   padding-top: 30px;
   padding-bottom: 35px;
 }
 
-.popular-item__wrapper {
+.popular-item__wrapper-all {
+  @include indent-mobile;
+}
+
+.popular-item__title-wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -39,6 +42,7 @@
 }
 
 .popular-item__list {
+  width: 100%;
   margin-bottom: 30px;
 
   line-height: 20px;
@@ -75,4 +79,134 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+}
+
+@media (min-width: $width-tablet) {
+
+  .popular-item {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left:0;
+
+      width: 100%;
+      height: 24px;
+
+      background-image: url("../../img/bg-zigzag-fill.svg");
+    }
+  }
+
+  .popular-item__wrapper-all {
+    @include indent;
+  }
+
+  .popular-item__title-wrapper {
+    flex-direction: row;
+    margin-bottom: 55px;
+  }
+
+  .popular-item__title {
+    margin: 0;
+    margin-left: auto;
+    width: 168px;
+    padding-top: 5px;
+    padding-right: 25px;
+    padding-left: 70px;
+
+    text-align: center;
+  }
+
+  .popular-item__item-title {
+    margin: 0;
+    width: 500px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .popular-item__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .popular-item__description-wrapper {
+    width: 292px;
+  }
+
+  .popular-item__description {
+    font-size: 17px;
+  }
+
+  .popular-item__image {
+    width: 334px;
+    height: 405px;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+
+  .popular-item__price-wrapper {
+    width: 292px;
+    margin-top: -114px;
+  }
+
+  .popular-item__price {
+    margin-bottom: 30px;
+
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $width-desktop) {
+
+  .popular-item {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .popular-item__title-wrapper {
+    margin-bottom: 0;
+    padding-top: 70px;
+  }
+
+  .popular-item__title {
+    width: 175px;
+    margin-left: 0;
+    padding-top: 10px;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  .popular-item__item-title {
+    order: 0;
+    width: 550px;
+    margin-bottom: 0;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .popular-item__wrapper {
+    margin-top: -120px;
+    padding-left: 175px;
+  }
+
+  .popular-item__description-wrapper {
+    margin-top: 165px;
+  }
+
+  .popular-item__image {
+    z-index: -1;
+
+    width: 525px;
+    height: 637px;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
 }
