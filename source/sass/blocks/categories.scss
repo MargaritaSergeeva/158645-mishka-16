@@ -31,3 +31,38 @@
     background-color: #46c1ae;
   }
 }
+
+@media (min-width: $width-tablet) {
+
+  .categories {
+    @include indent;
+  }
+
+  .categories__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .categories__item {
+    width: 334px;
+  }
+
+  .categories__link {
+    padding-left: 35px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+@media (min-width: $width-desktop) {
+
+  .categories__item {
+    width: 525px;
+  }
+
+  .categories__link {
+    padding-right: 350px;
+  }
+}
