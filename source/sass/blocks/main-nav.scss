@@ -2,8 +2,71 @@
   position: relative;
 }
 
+.main-nav__wrapper-logo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid $color-light-grey;
+}
+
 .main-nav__toggle {
   position: absolute;
-  top: -40px;
+  top: 40px;
   right: 20px;
+
+  width: 21px;
+  height: 20px;
+}
+
+.main-nav--nojs {
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $width-tablet) {
+
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .main-nav__wrapper-logo {
+    width: 384px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+
+    border: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+  }
+
+  .main-nav__search-cart-wrapper {
+    display: flex;
+    order: 1;
+  }
+}
+
+@media (min-width: $width-desktop) {
+
+  .main-nav__wrapper-logo {
+    order: 1;
+    width: 303px;
+    padding-left: 70px;
+  }
+
+  .main-nav__list {
+    order: 0;
+  }
+
+  .main-nav__search-cart-wrapper {
+    order: 2;
+  }
 }
