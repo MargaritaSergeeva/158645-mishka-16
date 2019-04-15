@@ -21,7 +21,7 @@
   .site-wrapper__image {
     background-image: url("../../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-size: $width-tablet;
+    background-size: 1170px;
     background-position: 50% 85px;
   }
 }
@@ -38,7 +38,7 @@
   .site-wrapper__image {
     background-image: url("../../img/hero-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-size: $width-desktop;
+    background-size: 1170px;
     background-position-y: 85px;
   }
 }

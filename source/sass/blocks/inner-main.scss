@@ -1,10 +1,10 @@
+.inner-main__title-wrapper {
+  background-color: #f1f1f1;
+}
+
 .inner-main__title {
   padding-top: 75px;
-  padding-right: 35px;
   padding-bottom: 75px;
-  padding-left: 35px;
-
-  background-color: #f1f1f1;
 }
 
 .inner-main__goods {
@@ -17,4 +17,11 @@
 
 .inner-main__form-wrapper {
   @include indent-mobile;
+}
+
+@media (min-width: $width-tablet) {
+
+  .inner-main__title-wrapper {
+    background-color: transparent;
+  }
 }
