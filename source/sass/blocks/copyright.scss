@@ -29,3 +29,14 @@
 .copyright__link-image {
   height: 100%;
 }
+
+@media (min-width: $width-tablet) {
+
+  .copyright {
+    width: 186px;
+    padding: 0;
+    padding-top: 0;
+
+    border: none;
+  }
+}

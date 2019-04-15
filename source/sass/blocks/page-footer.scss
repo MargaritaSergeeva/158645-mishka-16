@@ -9,6 +9,33 @@
   @include indent-mobile;
 }
 
+.page-footer__logo-wrapper {
+  display: none;
+}
+
 .page-footer__social {
   margin-bottom: 25px;
+}
+
+@media (min-width: $width-tablet) {
+
+  .page-footer {
+    padding-top: 50px;
+    padding-bottom: 55px;
+  }
+
+  .page-footer__wrapper {
+    @include indent;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo-wrapper {
+    display: block;
+  }
+
+  .page-footer__social {
+    margin-bottom: 0;
+    padding-top: 5px;
+  }
 }
