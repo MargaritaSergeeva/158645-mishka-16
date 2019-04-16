@@ -1,7 +1,7 @@
 .cart__link {
   display: block;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 31px;
   padding-left: 75px;
 
   font-size: 17px;
@@ -28,6 +28,8 @@
   }
 
   .cart__link {
+    text-align: right;
+
     border-bottom: none;
     border-left: 1px solid $color-light-grey;
   }

@@ -11,9 +11,13 @@
 
 @media (min-width: $width-tablet) {
 
+  .page-header {
+    @include indent;
+  }
+
   .page-header__info {
     position: absolute;
-    right: 45px;
+    right: 50px;
     bottom: 20px;
 
     display: block;

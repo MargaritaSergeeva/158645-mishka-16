@@ -34,10 +34,9 @@
   }
 
   .main-nav__wrapper-logo {
-    width: 384px;
+    width: 283px;
     padding-top: 24px;
     padding-bottom: 25px;
-    padding-left: 50px;
 
     border: none;
   }
@@ -58,8 +57,12 @@
 
   .main-nav__wrapper-logo {
     order: 1;
-    width: 303px;
-    padding-left: 70px;
+    width: 205px;
+  }
+
+  .main-nav__logo {
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .main-nav__list {

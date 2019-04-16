@@ -5,4 +5,38 @@
 
 .goods__item {
   margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $width-tablet) {
+
+  .goods {
+    margin-bottom: 25px;
+  }
+
+  .goods__item {
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+
+  .goods {
+    padding-top: 140px;
+  }
+
+  .goods__wrapper {
+    display: flex;
+  }
+
+  .goods__item {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 15px;
+    }
+  }
 }

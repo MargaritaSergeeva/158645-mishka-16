@@ -25,6 +25,10 @@
     padding-top: 50px;
     padding-bottom: 80px;
   }
+
+  .inner-main__goods {
+    @include indent;
+  }
 }
 
 @media (min-width: $width-desktop) {
