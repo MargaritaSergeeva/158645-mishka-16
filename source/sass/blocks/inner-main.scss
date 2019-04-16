@@ -7,10 +7,6 @@
   padding-bottom: 75px;
 }
 
-.inner-main__goods {
-  @include indent-mobile;
-}
-
 .inner-main__video {
   margin-bottom: 55px;
 }
@@ -24,10 +20,6 @@
   .inner-main__title {
     padding-top: 50px;
     padding-bottom: 80px;
-  }
-
-  .inner-main__goods {
-    @include indent;
   }
 }
 
