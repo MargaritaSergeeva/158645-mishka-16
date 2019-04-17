@@ -134,6 +134,10 @@
   }
 }
 
+.form__extra-wrapper {
+  @include indent-mobile;
+}
+
 .form__send-wrapper {
   @include indent-mobile;
 }
