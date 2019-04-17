@@ -88,7 +88,6 @@
 }
 
 @media (min-width: $width-tablet) {
-
   .contacts {
     display: flex;
     flex-direction: column;
@@ -143,7 +142,6 @@
 }
 
 @media (min-width: $width-desktop) {
-
   .contacts {
     @include indent;
     flex-direction: row;

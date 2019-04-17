@@ -75,7 +75,6 @@
 }
 
 @media (min-width: $width-tablet) {
-
   .item {
     display: flex;
   }
@@ -112,7 +111,6 @@
 }
 
 @media (min-width: $width-desktop) {
-
   .item {
     flex-direction: column;
     margin-right: auto;

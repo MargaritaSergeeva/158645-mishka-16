@@ -54,7 +54,6 @@
 }
 
 @media (min-width: $width-tablet) {
-
   .video {
     @include indent;
   }
@@ -89,7 +88,6 @@
 }
 
 @media (min-width: $width-desktop) {
-
   .video__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
