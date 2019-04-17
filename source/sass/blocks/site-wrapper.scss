@@ -2,6 +2,7 @@
 @media (min-width: $width-tablet) {
   .site-wrapper {
     position: relative;
+    background-image: linear-gradient(#ffffff 85px, #f9f9f9 85px, #f9f9f9 840px, #ffffff 840px);
 
     &--inner {
       background-image: linear-gradient(#ffffff 85px, #f1f1f1 85px, #f1f1f1 315px, #ffffff 315px);
@@ -18,13 +19,6 @@
       background-color: $color-light-grey;
     }
   }
-
-  .site-wrapper__image {
-    background-image: url("../../img/hero-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 1170px;
-    background-position: 50% 85px;
-  }
 }
 
 @media (min-width: $width-desktop) {
@@ -38,12 +32,5 @@
     &::after {
       display: none;
     }
-  }
-
-  .site-wrapper__image {
-    background-image: url("../../img/hero-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 1170px;
-    background-position-y: 85px;
   }
 }

@@ -10,8 +10,17 @@
 }
 
 @media (min-width: $width-tablet) {
+  .index-main__title-categories-wrapper {
+    margin-top: -64px;
+    padding-top: 164px;
+
+    background-image: url("../../img/hero-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 1170px;
+    background-position: 50%;
+  }
+
   .index-main__title-wrapper {
-    margin-top: 100px;
     margin-bottom: 375px;
     padding: 0;
 
@@ -19,11 +28,13 @@
     background-image: none;
   }
 
-  .index-main__categories {
-    background-color: #f9f9f9;
-  }
-
   .index-main__rewiews {
     margin-bottom: 70px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .index-main__title-categories-wrapper {
+    background-image: url("../../img/hero-desktop@1x.jpg");
   }
 }
