@@ -13,6 +13,11 @@
 
 @media (min-width: $width-tablet) {
 
+  .inner-main__title {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+
   .inner-main__form-wrapper {
     position: relative;
 
@@ -28,11 +33,6 @@
       background-image: url("../../img/bg-zigzag-fill.svg");
       background-repeat: repeat;
     }
-  }
-
-  .inner-main__title {
-    padding-top: 50px;
-    padding-bottom: 80px;
   }
 }
 

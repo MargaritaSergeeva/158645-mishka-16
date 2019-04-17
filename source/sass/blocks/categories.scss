@@ -28,7 +28,7 @@
 
 @media (min-width: $width-tablet) {
 
-  .categories {
+  .categories__wrapper {
     @include indent;
   }
 
