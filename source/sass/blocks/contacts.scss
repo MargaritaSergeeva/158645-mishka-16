@@ -143,15 +143,14 @@
 
 @media (min-width: $width-desktop) {
   .contacts {
-    @include indent;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    position: relative;
     width: $width-desktop;
     margin-right: auto;
     margin-left: auto;
     padding-top: 100px;
+    padding-right: 575px;
     padding-bottom: 100px;
+    padding-left: 50px;
   }
 
   .contacts__wrapper {
@@ -161,11 +160,13 @@
   }
 
   .contacts__title {
+    padding-top: 75px;
     padding-left: 175px;
   }
 
   .contacts__address-wrapper {
     flex-direction: column;
+    margin-bottom: 60px;
     padding-left: 175px;
   }
 
@@ -178,8 +179,9 @@
   }
 
   .contacts__map {
-    margin-bottom: 0;
-    margin-left: auto;
+    position: absolute;
+    top: 100px;
+    right: 50px;
   }
 
   .contacts__map-image {
@@ -189,7 +191,6 @@
   .contacts__write-us-wrapper {
     width: 525px;
     margin: 0;
-    margin-top: -60px;
     padding-left: 175px;
   }
 
