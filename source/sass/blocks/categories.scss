@@ -2,9 +2,21 @@
   @include list-reset;
 }
 
+.categories__item {
+  background-color: $color-green;
+
+  &--toys {
+    background-color: #46c1ae;
+  }
+}
+
 .categories__link {
+  position: relative;
   display: block;
-  padding-top: 30px;
+  width: $width-mobile;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 25px;
   padding-right: 175px;
   padding-bottom: 30px;
   padding-left: 30px;
@@ -15,46 +27,80 @@
   color: $color-white;
   text-decoration: none;
 
-  background-color: $color-green;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 36px;
+
+    width: 40px;
+    height: 62px;
+
+    background-repeat: no-repeat;
+
+    opacity: 0.5;
+  }
+
+  &--interior::before {
+    background-image: url("../../img/icon-interior.svg");
+  }
+
+  &--toys::before {
+    top: 22px;
+    right: 27px;
+
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../../img/icon-toy.svg");
+  }
+
+  &:hover {
+    padding-bottom: 35px;
+
+    &::before {
+      opacity: 0.7;
+    }
+  }
 
   &:active {
     color: rgba($color-white, 0.3);
-  }
 
-  &--toys {
-    background-color: #46c1ae;
-  }
-}
-
-@media (min-width: $width-tablet) {
-  .categories__wrapper {
-    @include indent;
-  }
-
-  .categories__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .categories__item {
-    width: 334px;
-  }
-
-  .categories__link {
-    padding-left: 35px;
-
-    font-size: 20px;
-    line-height: 30px;
+    &::before {
+      opacity: 0.3;
+    }
   }
 }
 
+// @media (min-width: $width-tablet) {
+//   .categories__wrapper {
+//     @include indent;
+//   }
 
-@media (min-width: $width-desktop) {
-  .categories__item {
-    width: 525px;
-  }
+//   .categories__list {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
 
-  .categories__link {
-    padding-right: 350px;
-  }
-}
+//   .categories__item {
+//     width: 334px;
+//   }
+
+//   .categories__link {
+//     padding-left: 35px;
+
+//     font-size: 20px;
+//     line-height: 30px;
+//   }
+// }
+
+
+// @media (min-width: $width-desktop) {
+//   .categories__item {
+//     width: 525px;
+//   }
+
+//   .categories__link {
+//     padding-right: 350px;
+//   }
+// }
