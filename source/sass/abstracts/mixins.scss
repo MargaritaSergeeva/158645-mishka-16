@@ -9,3 +9,8 @@
   padding-right: 30px;
   padding-left: 30px;
 }
+
+@mixin indent {
+  padding-right: 50px;
+  padding-left: 50px;
+}

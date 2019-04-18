@@ -3,30 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="site-wrapper site-wrapper--inner">
     <header class="page-header container">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo logo" href="index.html">
-          <img class="logo__image" src="http://placehold.it/150x100" width="86" height="35" alt="Логотип сайта MISHKA">
-        </a>
-      </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs">
+        <div class="main-nav__wrapper-logo">
+          <a class="main-nav__logo logo" href="index.html">
+            <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта MISHKA">
+          </a>
+        </div>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="order.html">Вязание на заказ</a>
-            </li>
-          </ul>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="order.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item site-list__item--optional">
+            <a class="site-list__link" href="order.html">Новые поступления</a>
+          </li>
+          <li class="site-list__item site-list__item--optional">
+            <a class="site-list__link" href="order.html">Распродажа</a>
+          </li>
+        </ul>
+        <div class="main-nav__search-cart-wrapper">
           <div class="main-nav__search search">
-            <a class="search__link" href="#">Поиск по сайту</a>
+            <a class="search__link" href="#" aria-label="Поиск по сайту">Поиск по сайту</a>
           </div>
           <div class="main-nav__cart cart">
             <a class="cart__link" href="#">
@@ -36,13 +44,14 @@
           </div>
         </div>
       </nav>
+      <p class="page-header__info">Бесплатная доставка по России</p>
     </header>
     <main class="inner-main">
       <div class="inner-main__title-wrapper">
         <h1 class="inner-main__title main-title">Каталог товаров</h1>
       </div>
-      <section class="inner-main__goods goods container">
-        <div class="goods__wrapper">
+      <section class="inner-main__goods goods">
+        <div class="goods__wrapper container">
           <h2 class="visually-hidden">Список товаров</h2>
           <article class="goods__item item">
             <a class="item__image-link" href="#">
@@ -157,13 +166,20 @@
           <div class="video__block">
             <img class="video__image" src="http://placehold.it/150x100" width="260" height="150" alt="Первый кадр видео о процессе производства">
           </div>
-          <p class="video__description">По просьбам наших любимых&nbsp;фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="video__order button" href="#">Сделать заказ</a>
+          <div class="video__order-wrapper">
+            <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="video__order button" href="#">Сделать заказ</a>
+          </div>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
+        <div class="page-footer__logo-wrapper">
+          <a class="page-footer__logo logo" href="index.html">
+            <img class="logo__image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип сайта MISHKA">
+          </a>
+        </div>
         <section class="page-footer__social social">
           <h2 class="visually-hidden">Мы в соц-сетях</h2>
           <ul class="social__list">
@@ -188,7 +204,7 @@
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
-            <img class="copyright__link-image" src="http://placehold.it/150x100" width="27" height="34" alt="Сайт разработчика HTML Academy">
+            <img class="copyright__link-image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Сайт разработчика HTML Academy">
           </a>
         </div>
       </div>

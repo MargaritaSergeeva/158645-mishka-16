@@ -39,3 +39,9 @@
     background-position: 50% 50%;
   }
 }
+
+@media (min-width: $width-tablet) {
+  .social {
+    width: 350px;
+  }
+}

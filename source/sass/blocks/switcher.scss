@@ -44,3 +44,15 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $width-tablet) {
+  .switcher__button {
+    width: 80px;
+
+    border: none;
+
+    &::after {
+      left: 20%;
+    }
+  }
+}
