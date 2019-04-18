@@ -2,12 +2,19 @@
   @include list-reset;
 }
 
+.site-list__item {
+  border-bottom: 1px solid $color-light-grey;
+}
+
 .site-list__item--optional {
   display: none;
 }
 
 .site-list__link {
   display: block;
+  width: $width-mobile;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 25px;
   padding-bottom: 29px;
   padding-left: 75px;
@@ -17,8 +24,6 @@
   font-weight: 700;
   color: $color-black;
   text-decoration: none;
-
-  border-bottom: 1px solid $color-light-grey;
 
   &:hover {
     color: rgba($color-black, 0.6);
