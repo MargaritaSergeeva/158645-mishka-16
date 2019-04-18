@@ -3,70 +3,99 @@
 }
 
 .main-nav__wrapper-logo {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 22px;
+  padding-bottom: 22px;
 
   border-bottom: 1px solid $color-light-grey;
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 40px;
-  right: 20px;
+  top: 29px;
+  right: 30px;
 
   width: 21px;
   height: 20px;
+
+  background-color: transparent;
+  background-position: no-repeat;
+  background-position: 100%;
+  border: none;
+
+  cursor: pointer;
 }
 
-.main-nav--nojs {
-  .main-nav__toggle {
-    display: none;
+@media (max-width: 2767px) {
+  .main-nav--opened {
+    .main-nav__toggle {
+      background-image: url("../../img/icon-menu-close.svg");
+    }
+  }
+
+  .main-nav--closed {
+    .main-nav__toggle {
+      top: 32px;
+
+      width: 21px;
+      height: 15px;
+
+      background-image: url("../../img/icon-menu-open.svg");
+    }
+  }
+
+  .main-nav--nojs {
+    .main-nav__toggle {
+      display: none;
+    }
   }
 }
 
-@media (min-width: $width-tablet) {
-  .main-nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
 
-  .main-nav__wrapper-logo {
-    width: 322px;
-    padding-top: 24px;
-    padding-bottom: 25px;
 
-    border: none;
-  }
 
-  .main-nav__list {
-    display: flex;
-    flex-wrap: wrap;
-    order: 2;
-  }
+// @media (min-width: $width-tablet) {
+//   .main-nav {
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-items: flex-start;
+//   }
 
-  .main-nav__search-cart-wrapper {
-    display: flex;
-    order: 1;
-  }
-}
+//   .main-nav__wrapper-logo {
+//     width: 322px;
+//     padding-top: 24px;
+//     padding-bottom: 25px;
 
-@media (min-width: $width-desktop) {
-  .main-nav__wrapper-logo {
-    order: 1;
-    width: 323px;
-  }
+//     border: none;
+//   }
 
-  .main-nav__logo {
-    margin-right: auto;
-    margin-left: auto;
-  }
+//   .main-nav__list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     order: 2;
+//   }
 
-  .main-nav__list {
-    order: 0;
-  }
+//   .main-nav__search-cart-wrapper {
+//     display: flex;
+//     order: 1;
+//   }
+// }
 
-  .main-nav__search-cart-wrapper {
-    order: 2;
-  }
-}
+// @media (min-width: $width-desktop) {
+//   .main-nav__wrapper-logo {
+//     order: 1;
+//     width: 323px;
+//   }
+
+//   .main-nav__logo {
+//     margin-right: auto;
+//     margin-left: auto;
+//   }
+
+//   .main-nav__list {
+//     order: 0;
+//   }
+
+//   .main-nav__search-cart-wrapper {
+//     order: 2;
+//   }
+// }

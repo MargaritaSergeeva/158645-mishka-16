@@ -8,8 +8,8 @@
 
 .site-list__link {
   display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 29px;
   padding-left: 75px;
 
   font-size: 17px;
@@ -29,60 +29,60 @@
   }
 }
 
-@media (min-width: $width-tablet) {
-  .site-list__item {
-    margin-right: 25px;
+// @media (min-width: $width-tablet) {
+//   .site-list__item {
+//     margin-right: 25px;
 
-    &:last-child {
-      margin-right: 0;
-    }
-  }
+//     &:last-child {
+//       margin-right: 0;
+//     }
+//   }
 
-  .site-list__link {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 0;
+//   .site-list__link {
+//     padding-top: 20px;
+//     padding-bottom: 20px;
+//     padding-left: 0;
 
-    font-size: 15px;
+//     font-size: 15px;
 
-    border: none;
-  }
-}
+//     border: none;
+//   }
+// }
 
-@media (min-width: $width-desktop) {
-  .site-list {
-    width: 380px;
-  }
+// @media (min-width: $width-desktop) {
+//   .site-list {
+//     width: 380px;
+//   }
 
-  .site-list__item {
-    margin: 0;
+//   .site-list__item {
+//     margin: 0;
 
-    &--optional {
-      display: block;
+//     &--optional {
+//       display: block;
 
-      .site-list__link {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-right: 27px;
+//       .site-list__link {
+//         padding-top: 20px;
+//         padding-bottom: 20px;
+//         padding-right: 27px;
 
-        font-size: 15px;
-      }
-    }
+//         font-size: 15px;
+//       }
+//     }
 
-    &:first-child {
-      padding-right: 35px;
-      border-right: 1px solid $color-light-grey;
-    }
+//     &:first-child {
+//       padding-right: 35px;
+//       border-right: 1px solid $color-light-grey;
+//     }
 
-    &:nth-child(2n) {
-      margin-left: 35px;
-    }
-  }
+//     &:nth-child(2n) {
+//       margin-left: 35px;
+//     }
+//   }
 
-  .site-list__link {
-    padding-top: 30px;
-    padding-bottom: 31px;
+//   .site-list__link {
+//     padding-top: 30px;
+//     padding-bottom: 31px;
 
-    font-size: 17px;
-  }
-}
+//     font-size: 17px;
+//   }
+// }

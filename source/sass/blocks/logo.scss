@@ -4,10 +4,18 @@
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-}
 
-@media (min-width: $width-tablet) {
-  .logo {
-    margin-left: 0;
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
   }
 }
+
+// @media (min-width: $width-tablet) {
+//   .logo {
+//     margin-left: 0;
+//   }
+// }
