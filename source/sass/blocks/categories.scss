@@ -3,10 +3,40 @@
 }
 
 .categories__item {
+  position: relative;
   background-color: $color-green;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+
+    display: none;
+    width: 100%;
+    height: 10px;
+
+    background-color: $color-green;
+  }
+
+  &:hover {
+    &::after {
+      display: block;
+    }
+  }
 
   &--toys {
     background-color: #46c1ae;
+
+    &::after {
+      background-color: #46c1ae;
+    }
+
+    &:hover {
+      &::after {
+        display: block;
+      }
+    }
   }
 }
 
@@ -56,9 +86,12 @@
   }
 
   &:hover {
+    padding-top: 20px;
     padding-bottom: 35px;
 
     &::before {
+      top: 17px;
+
       opacity: 0.7;
     }
   }
