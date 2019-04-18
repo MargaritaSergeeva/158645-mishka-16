@@ -89,23 +89,22 @@
 
 @media (min-width: $width-desktop) {
   .video__wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-bottom: 0;
+    position: relative;
+    padding-left: 683px;
+    padding-bottom: 60px;
   }
 
   .video__title {
-    width: 1050px;
     margin: 0;
+    margin-bottom: 40px;
     padding-top: 100px;
     padding-right: 130px;
-    padding-left: 760px;
   }
 
   .video__block {
-    order: 0;
-    margin-top: -148px;
-    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .video__image {
@@ -115,11 +114,8 @@
 
   .video__order-wrapper {
     width: 365px;
-    margin-top: -148px;
     margin-left: auto;
-    padding-top: 185px;
     padding-right: 58px;
-    padding-bottom: 30px;
     padding-left: 80px;
   }
 
