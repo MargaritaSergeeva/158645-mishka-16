@@ -1,7 +1,8 @@
 .reviews__wrapper {
   @include indent-mobile;
+  margin-bottom: 25px;
   padding-top: 19px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .reviews__title {
