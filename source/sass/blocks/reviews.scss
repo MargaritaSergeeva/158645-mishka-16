@@ -1,7 +1,7 @@
-.reviews__wrapper {
+.reviews {
   @include indent-mobile;
   margin-bottom: 25px;
-  padding-top: 19px;
+  padding-top: 17px;
   padding-bottom: 20px;
 }
 
@@ -17,7 +17,7 @@
 
 .reviews__text {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 .reviews__author {
@@ -30,7 +30,7 @@
 
 .reviews__nickname {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   font-size: 17px;
   color: $main-color;
@@ -38,11 +38,11 @@
 }
 
 .reviews__switcher {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 // @media (min-width: $width-tablet) {
-//   .reviews__wrapper {
+//   .reviews {
 //     @include indent;
 //     display: flex;
 //     flex-wrap: wrap;
@@ -87,7 +87,7 @@
 // }
 
 // @media (min-width: $width-desktop) {
-//   .reviews__wrapper {
+//   .reviews {
 //     margin-left: 50px;
 //     padding-left: 175px;
 //     padding-bottom: 60px;
