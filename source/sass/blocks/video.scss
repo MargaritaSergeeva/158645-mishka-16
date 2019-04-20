@@ -3,8 +3,8 @@
 }
 
 .video__wrapper {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 24px;
+  padding-bottom: 32px;
 
   border: 1px solid $color-light-grey;
 
@@ -18,18 +18,71 @@
 }
 
 .video__title {
+  position: relative;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   padding-right: 30px;
   padding-left: 90px;
 
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 33px;
+
+    width: 32px;
+    height: 32px;
+
+    background-image: url("../../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .video__block {
-  margin-bottom: 30px;
+  position: relative;
+  margin-bottom: 26px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 101px;
+    height: 77px;
+    margin-left: -50px;
+    margin-top: -38px;
+
+    background-image: url("../../img/icon-play.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  &:hover {
+
+    &::after {
+      width: calc(101px * 1.2);
+      height: calc(77px * 1.2);
+      margin-left: calc(-50px * 1.2);
+      margin-top: calc(-38px * 1.2);
+    }
+  }
+
+  &:active {
+
+    &::after {
+      width: calc(101px * 0.8);
+      height: calc(77px * 0.8);
+      margin-left: calc(-50px * 0.8);
+      margin-top: calc(-38px * 0.8);
+
+      opacity: 0.3;
+    }
+  }
 }
 
 .video__image {
@@ -38,93 +91,91 @@
   height: 150px;
 }
 
+.video__order-wrapper {
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
 .video__description {
   margin: 0;
-  margin-bottom: 30px;
-  padding-right: 30px;
-  padding-left: 30px;
+  margin-bottom: 26px;
 
   font-size: 13px;
   line-height: 24px;
 }
 
-.video__order {
-  margin-right: 30px;
-  margin-left: 30px;
-}
+// @media (min-width: $width-tablet) {
+// .video {
+//   @include indent;
+// }
 
-@media (min-width: $width-tablet) {
-  .video {
-    @include indent;
-  }
+//   .video__wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     padding-top: 0;
+//     padding-bottom: 50px;
+//   }
 
-  .video__wrapper {
-    display: flex;
-    flex-direction: column;
-    padding-top: 0;
-    padding-bottom: 50px;
-  }
+//   .video__block {
+//     order: -1;
+//   }
 
-  .video__block {
-    order: -1;
-  }
+//   .video__image {
+//     width: 668px;
+//     height: 455px;
+//   }
 
-  .video__image {
-    width: 668px;
-    height: 455px;
-  }
+//   .video__title {
+//     margin-bottom: 40px;
 
-  .video__title {
-    margin-bottom: 40px;
+//     font-size: 20px;
+//     line-height: 24px;
+//   }
 
-    font-size: 20px;
-    line-height: 24px;
-  }
+//   .video__description {
+//     padding-right: 50px;
+//     font-size: 15px;
+//   }
+// }
 
-  .video__description {
-    padding-right: 50px;
-    font-size: 15px;
-  }
-}
+// @media (min-width: $width-desktop) {
+//   .video__wrapper {
+//     position: relative;
+//     padding-left: 683px;
+//     padding-bottom: 60px;
+//   }
 
-@media (min-width: $width-desktop) {
-  .video__wrapper {
-    position: relative;
-    padding-left: 683px;
-    padding-bottom: 60px;
-  }
+//   .video__title {
+//     margin: 0;
+//     margin-bottom: 40px;
+//     padding-top: 100px;
+//     padding-right: 130px;
+//   }
 
-  .video__title {
-    margin: 0;
-    margin-bottom: 40px;
-    padding-top: 100px;
-    padding-right: 130px;
-  }
+//   .video__block {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//   }
 
-  .video__block {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+//   .video__image {
+//     width: 683px;
+//     height: 455px;
+//   }
 
-  .video__image {
-    width: 683px;
-    height: 455px;
-  }
+//   .video__order-wrapper {
+//     width: 365px;
+//     margin-left: auto;
+//     padding-right: 58px;
+//     padding-left: 80px;
+//   }
 
-  .video__order-wrapper {
-    width: 365px;
-    margin-left: auto;
-    padding-right: 58px;
-    padding-left: 80px;
-  }
+//   .video__description {
+//     margin-bottom: 50px;
+//     padding: 0;
+//   }
 
-  .video__description {
-    margin-bottom: 50px;
-    padding: 0;
-  }
-
-  .video__order {
-    margin: 0;
-  }
-}
+//   .video__order {
+//     margin: 0;
+//   }
+// }
