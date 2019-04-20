@@ -1,10 +1,7 @@
-.goods {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 .goods__wrapper {
   @include indent-mobile;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .goods__item {
