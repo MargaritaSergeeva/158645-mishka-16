@@ -1,12 +1,11 @@
 .page-footer {
-  padding-top: 25px;
-  padding-bottom: 20px;
-
   background-color: #f1f1f1;
 }
 
 .page-footer__wrapper {
   @include indent-mobile;
+  padding-top: 25px;
+  padding-bottom: 20px;
 }
 
 .page-footer__logo-wrapper {
@@ -14,7 +13,7 @@
 }
 
 .page-footer__social {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 // @media (min-width: $width-tablet) {
