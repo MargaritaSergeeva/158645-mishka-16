@@ -25,8 +25,11 @@
   color: $color-black;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba($color-black, 0.6);
+
+    outline: none;
   }
 
   &:active {

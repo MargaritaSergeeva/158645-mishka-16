@@ -20,6 +20,7 @@
   }
 
   &:hover {
+
     &::after {
       display: block;
     }
@@ -30,6 +31,13 @@
 
     &::after {
       background-color: #46c1ae;
+    }
+  }
+
+  &:focus-within {
+
+    &::after {
+      display: block;
     }
   }
 }
@@ -79,9 +87,12 @@
     background-image: url("../../img/icon-toy.svg");
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     padding-top: 20px;
     padding-bottom: 35px;
+
+    outline: none;
 
     &::before {
       top: 17px;

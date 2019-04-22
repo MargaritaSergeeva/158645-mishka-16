@@ -13,6 +13,8 @@
   background-color: $color-white;
   border: 1px solid $color-light-grey;
 
+  outline: none;
+  
   &::after {
     content: "";
     position: absolute;
@@ -36,7 +38,8 @@
     background-image: url("../../img/icon-right-arrow.svg");
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     opacity: 0.6;
   }
 

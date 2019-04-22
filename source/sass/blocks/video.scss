@@ -69,11 +69,14 @@
   background-size: 100%;
   border: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     width: calc(101px * 1.2);
     height: calc(77px * 1.2);
     margin-left: calc(-50px * 1.2);
     margin-top: calc(-38px * 1.2);
+
+    outline: none;
   }
 
   &:active {

@@ -98,6 +98,10 @@
   }
 }
 
+.form__radio-input:focus + .form__radio-name::before {
+  border: 2px solid $color-green;
+}
+
 .form__radio-input:checked + .form__radio-name::before {
   background-color: #62d1ba;
   background-clip: content-box;
@@ -125,28 +129,32 @@
   &::before {
     content: "";
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 0;
+    left: 0;
 
-    width: 36px;
-    height: 35px;
+    width: 40px;
+    height: 39px;
 
-    box-shadow: 0 0 0 2px $main-color;
+    border: 2px solid $main-color;
   }
 
   &:hover {
 
     &::before {
-      box-shadow: 0 0 0 2px $color-green;
+      border: 2px solid $color-green;
     }
   }
 
   &:active {
 
     &::before {
-      box-shadow: 0 0 0 2px rgba($main-color, 0.3);
+      border: 2px solid rgba($main-color, 0.3);
     }
   }
+}
+
+.form__checkbox-input:focus + .form__checkbox-name::before {
+  border: 2px solid $color-green;
 }
 
 .form__checkbox-input:checked + .form__checkbox-name::before {

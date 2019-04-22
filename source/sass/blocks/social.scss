@@ -21,7 +21,9 @@
 
   line-height: 0;
 
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
 
     path {
       fill: #46c1ae;

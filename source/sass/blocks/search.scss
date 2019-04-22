@@ -31,9 +31,12 @@
     fill: #d3d2d2;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba($color-black, 0.6);
 
+    outline: none;
+    
     path {
       fill: $color-green;
     }

@@ -87,8 +87,10 @@
     border: 2px solid $color-green;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: 2px solid rgba($main-color, 0.3);
+    outline: none;
   }
 
   &:active {
