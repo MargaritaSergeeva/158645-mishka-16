@@ -192,7 +192,10 @@
 .form__input {
   width: 100%;
   padding-top: 16px;
-  padding-bottom: 17px;
+  padding-bottom: 16px;
+
+  font-size: 17px;
+  line-height: 18px;
 
   border: none;
   border-bottom: 2px solid $color-black;
@@ -219,12 +222,8 @@
 
   .form__input {
     padding-right: 55px;
-    padding-bottom: 16px;
+    padding-bottom: 15px;
   }
-}
-
-.form__field-label {
-  position: relative;
 }
 
 .form__field-label:hover {
@@ -256,7 +255,7 @@
 .form__icon-phone {
   position: absolute;
   right: 8px;
-  bottom: 0;
+  bottom: 18px;
 
   width: 25px;
   height: 24px;
@@ -271,7 +270,7 @@
 .form__icon-mail {
   position: absolute;
   right: 4px;
-  bottom: -6px;
+  bottom: 11px;
 
   width: 32px;
   height: 30px;
