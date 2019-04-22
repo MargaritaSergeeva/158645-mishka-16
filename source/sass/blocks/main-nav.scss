@@ -25,7 +25,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 2767px) {
+@media (max-width: 767px) {
   .main-nav--opened {
     .main-nav__toggle {
       background-image: url("../../img/icon-menu-close.svg");
@@ -50,35 +50,36 @@
   }
 }
 
+@media (min-width: $width-tablet) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 
+  .main-nav__wrapper-logo {
+    width: 322px;
+    padding-top: 24px;
+    padding-bottom: 19px;
 
+    border: none;
+   }
 
-// @media (min-width: $width-tablet) {
-//   .main-nav {
-//     display: flex;
-//     flex-wrap: wrap;
-//     align-items: flex-start;
-//   }
+  .main-nav__toggle {
+    display: none;
+  }
 
-//   .main-nav__wrapper-logo {
-//     width: 322px;
-//     padding-top: 24px;
-//     padding-bottom: 25px;
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+  }
 
-//     border: none;
-//   }
-
-//   .main-nav__list {
-//     display: flex;
-//     flex-wrap: wrap;
-//     order: 2;
-//   }
-
-//   .main-nav__search-cart-wrapper {
-//     display: flex;
-//     order: 1;
-//   }
-// }
+  .main-nav__search-cart-wrapper {
+    display: flex;
+    order: 1;
+  }
+ }
 
 // @media (min-width: $width-desktop) {
 //   .main-nav__wrapper-logo {

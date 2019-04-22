@@ -36,6 +36,7 @@
     color: rgba($color-black, 0.6);
 
     outline: none;
+
     path {
       fill: $color-green;
     }
@@ -50,15 +51,26 @@
   }
 }
 
-// @media (min-width: $width-tablet) {
-//   .cart {
-//     width: 263px;
-//   }
+ @media (min-width: $width-tablet) {
 
-//   .cart__link {
-//     text-align: right;
+  .cart {
+    width: 263px;
 
-//     border-bottom: none;
-//     border-left: 1px solid $color-light-grey;
-//   }
-// }
+    border: none;
+  }
+
+  .cart__link {
+    width: auto;
+    padding-top: 31px;
+    padding-bottom: 33px;
+
+    text-align: right;
+
+    border-left: 1px solid $color-light-grey;
+
+    svg {
+      top: 34px;
+      left: 31px;
+    }
+  }
+}

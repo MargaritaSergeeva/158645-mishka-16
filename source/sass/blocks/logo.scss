@@ -10,7 +10,7 @@
   &[href]:hover,
   &[href]:focus {
     outline: none;
-    
+
     opacity: 0.6;
   }
 
@@ -19,8 +19,21 @@
   }
 }
 
-// @media (min-width: $width-tablet) {
-//   .logo {
-//     margin-left: 0;
-//   }
-// }
+.logo__image {
+  width: 86px;
+  height: 35px;
+}
+
+@media (min-width: $width-tablet) {
+  .logo {
+    width: auto;
+    margin-left: 0;
+
+    text-align: start;
+  }
+
+  .logo__image {
+    width: 113px;
+    height: 46px;
+  }
+}
