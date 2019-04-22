@@ -6,7 +6,7 @@
 .form__intro {
   @include indent-mobile;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 
   font-size: 13px;
   line-height: 24px;
@@ -17,31 +17,40 @@
 }
 
 .form__filters--type {
-  margin-bottom: 44px;
+  margin-bottom: 38px;
 }
 
-.form__field-name {
+.form__field-name-wrapper {
   position: relative;
-  display: block;
-  margin-bottom: 24px;
 
-  font-size: 17px;
-  line-height: 17px;
-  font-weight: 700;
-  color: $color-green;
-  text-transform: uppercase;
+  display: block;
+  margin-bottom: 17px;
 
   &::after {
     content: "";
     position: absolute;
-    top: 8px;
-    left: 61px;
+    top: 14px;
+    left: 62px;
+    z-index: -1;
 
-    width: calc(100% - 61px);
+    width: calc(100% - 62px);
     height: 1px;
 
     background-color: $color-green;
+
+    overflow: hidden;
   }
+}
+
+.form__field-name {
+  padding-right: 15px;
+  font-size: 17px;
+  line-height: 19px;
+  font-weight: 700;
+  color: $color-green;
+  text-transform: uppercase;
+
+  background-color: $color-white;
 }
 
 .form__radio-name {
@@ -93,7 +102,7 @@
 }
 
 .form__filters--color {
-  margin-bottom: 31px;
+  margin-bottom: 25px;
 }
 
 .form__checkbox-name {
@@ -147,20 +156,20 @@
 
 .form__user-name {
   @include indent-mobile;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
-  .form__field-name {
-    margin-bottom: 28px;
+  .form__field-name-wrapper {
+    margin-bottom: 21px;
   }
 }
 
 .form__input-block {
   @include indent-mobile;
-  margin-top: 0;
   margin-bottom: 22px;
 }
 
 .form__user-wrapper {
+
   .form__input-block {
     padding-right: 0;
     padding-left: 0;
@@ -194,53 +203,60 @@
     color: rgba($color-black, 0.3);
   }
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     border-bottom: 2px solid $color-green;
-  }
-
-  &:focus {
-    border-bottom: 2px solid $color-green;
+    outline: none;
   }
 }
 
 .form__contacts-wrapper {
 
   .form__input-block {
-    margin-bottom: 32px;
+    margin-bottom: 26px;
+  }
+
+  .form__input {
+    padding-right: 55px;
+    padding-bottom: 16px;
   }
 }
 
-.form__field-name--tel {
+.form__field-label {
   position: relative;
-  margin-bottom: 0;
 }
 
-.form__field-name--tel:hover {
+.form__field-label:hover {
 
-  .form__icon-phone {
+  .form__icon-phone,
+  .form__icon-mail {
     opacity: 1;
   }
 
-  .form__icon-phone-part {
+  .form__icon-phone-part,
+  .form__icon-mail-part {
     fill: #62d1ba;
   }
 }
 
-.form__field-name--tel:active {
+.form__field-label:active {
 
-  .form__icon-phone {
+  .form__icon-phone,
+  .form__icon-mail {
     opacity: 1;
   }
 
-  .form__icon-phone-part {
+  .form__icon-phone-part,
+  .form__icon-mail-part {
     fill: #62d1ba;
   }
 }
 
 .form__icon-phone {
   position: absolute;
-  top: 35px;
   right: 8px;
+  bottom: 0;
 
   width: 25px;
   height: 24px;
@@ -248,57 +264,19 @@
   opacity: 0.2;
 }
 
-.form__input--tel {
-  margin-top: 5px;
-}
-
 .form__field-name--email {
-  position: relative;
-  margin-bottom: 0;
-
-  &::after {
-    left: 80px;
-
-    width: calc(100% - 80px);
-  }
-}
-
-.form__field-name--email:hover {
-
-  .form__icon-mail {
-    opacity: 1;
-  }
-
-  .form__icon-mail-part {
-    fill: #62d1ba;
-  }
-}
-
-.form__field-name--email:active {
-
-  .form__icon-mail {
-    opacity: 1;
-  }
-
-  .form__icon-mail-part {
-    fill: #62d1ba;
-  }
+  padding-right: 24px;
 }
 
 .form__icon-mail {
   position: absolute;
-  top: 34px;
   right: 4px;
+  bottom: -6px;
 
   width: 32px;
   height: 30px;
 
   opacity: 0.2;
-}
-
-.form__input--email {
-  margin-top: 5px;
-  padding-bottom: 16px;
 }
 
 .form__extra-wrapper {
@@ -309,6 +287,7 @@
   display: block;
   width: 100%;
   min-height: 142px;
+  margin-top: 17px;
   margin-bottom: 14px;
   padding: 15px 15px;
 
@@ -320,12 +299,11 @@
     color: rgba($color-black, 0.3);
   }
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     border: 2px solid $color-green;
-  }
-
-  &:focus {
-    border: 2px solid $color-green;
+    outline: none;
   }
 }
 
@@ -335,7 +313,7 @@
 
 .form__note {
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 
   font-size: 14px;
   line-height: 16px;
