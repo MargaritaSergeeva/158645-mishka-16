@@ -35,6 +35,17 @@
   line-height: 30px;
   font-weight: 700;
   color: $color-black;
+
+  &:hover,
+  &:focus {
+    color: rgba($color-black, 0.6);
+
+    outline: none;
+  }
+
+  &:active {
+    color: rgba($color-black, 0.3);
+  }
 }
 
 .popular-item__description {
