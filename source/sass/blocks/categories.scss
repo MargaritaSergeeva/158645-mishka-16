@@ -130,6 +130,7 @@
   .categories__link {
     padding-top: 28px;
     padding-left: 29px;
+    padding-bottom: 35px;
 
     font-size: 20px;
     line-height: 30px;
@@ -144,12 +145,14 @@
       right: 27px;
     }
 
-  &:hover,
-  &:focus {
-    padding-top: 23px;
+    &:hover,
+    &:focus {
+      padding-top: 23px;
+      padding-bottom: 40px;
 
-    &::before {
-      top: 25px;
+      &::before {
+        top: 25px;
+      }
     }
   }
 }
