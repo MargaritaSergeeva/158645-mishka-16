@@ -52,10 +52,12 @@
 
     background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .reviews__title {
     order: -2;
+    width: 400px;
     margin-bottom: 49px;
     margin-left: -4px;
 
@@ -68,6 +70,10 @@
 
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .reviews__author-wrapper {
+    width: 300px;
   }
 
   .reviews__author {
@@ -86,7 +92,9 @@
   .reviews__write {
     order: -1;
     margin-top: 2px;
+    max-width: 270px;
     margin-left: auto;
+    margin-bottom: 45px;
     padding-right: 40px;
     padding-left: 36px;
   }

@@ -58,7 +58,7 @@
   }
 
   .main-nav__wrapper-logo {
-    width: 322px;
+    width: 320px;
     padding-top: 24px;
     padding-bottom: 19px;
 
@@ -73,10 +73,12 @@
     display: flex;
     flex-wrap: wrap;
     order: 2;
+    width: 400px;
   }
 
   .main-nav__search-cart-wrapper {
     display: flex;
+    flex-wrap: wrap;
     order: 1;
   }
  }

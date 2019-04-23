@@ -167,7 +167,9 @@
 
   .advantages__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    width: 588px;
   }
 
   .advantages__item {
@@ -186,7 +188,6 @@
 
     &--handmade {
       order: 1;
-      margin-left: 80px;
     }
 
     &--style {
@@ -199,7 +200,6 @@
 
     &--russian {
       order: 3;
-      margin-left: 80px;
     }
 
     &--like {
@@ -212,7 +212,6 @@
 
     &--gift {
       order: 5;
-      margin-left: 80px;
 
       &::before {
         top: 3px;

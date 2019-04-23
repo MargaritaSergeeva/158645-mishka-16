@@ -67,11 +67,22 @@
     font-size: 0;
 
     border-bottom: none;
-    border-left: 1px solid $color-light-grey;
 
     svg {
       top: 37px;
       left: 33px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 1px;
+      height: 88px;
+
+      background-color: $color-light-grey;
     }
   }
  }

@@ -41,12 +41,12 @@
 @media (min-width: $width-tablet) {
 
   .social {
-    width: 350px;
-    margin-right: 32px;
-    padding-left: 159px;
+    width: 160px;
+    margin-right: 63px;
   }
 
   .social__list {
+    width: auto;
     margin: 0;
   }
 }

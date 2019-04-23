@@ -153,8 +153,10 @@
 
   .contacts__address-wrapper {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: flex-start;
-    margin-bottom: 19px;
+    margin-bottom: 56px;
 
     font-size: 17px;
   }
@@ -164,7 +166,7 @@
   }
 
   .contacts__address {
-    margin-left: auto;
+    margin-bottom: 0;
   }
 
   .contacts__address-value {
