@@ -28,7 +28,7 @@
   &:hover,
   &:focus {
     outline: none;
-    
+
     path {
       fill: #46c1ae;
     }
@@ -42,12 +42,12 @@
   }
 }
 
-// @media (min-width: $width-tablet) {
-//   .copyright {
-//     width: 186px;
-//     padding: 0;
-//     padding-top: 0;
+@media (min-width: $width-tablet) {
+  .copyright {
+    width: 186px;
+    padding: 0;
+    padding-top: 0;
 
-//     border: none;
-//   }
-// }
+    border: none;
+  }
+}

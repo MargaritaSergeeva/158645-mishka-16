@@ -38,8 +38,15 @@
   }
 }
 
-// @media (min-width: $width-tablet) {
-//   .social {
-//     width: 350px;
-//   }
-// }
+@media (min-width: $width-tablet) {
+
+  .social {
+    width: 350px;
+    margin-right: 32px;
+    padding-left: 159px;
+  }
+
+  .social__list {
+    margin: 0;
+  }
+}
