@@ -108,8 +108,6 @@
 
 @media (min-width: $width-tablet) {
   .contacts {
-    display: flex;
-    flex-direction: column;
     padding-top: 57px;
     padding-bottom: 57px;
 
@@ -122,8 +120,9 @@
 
   .contacts__wrapper {
     @include indent;
-    padding-top: 0;
     width: $width-tablet;
+    margin-bottom: 56px;
+    padding-top: 0;
   }
 
   .contacts__title {
@@ -156,7 +155,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin-bottom: 56px;
 
     font-size: 17px;
   }
@@ -179,6 +177,7 @@
 
   .contacts__map-image {
     width: $width-tablet;
+    height: 457px;
   }
 
   .contacts__write-us-wrapper {

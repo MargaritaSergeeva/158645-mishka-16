@@ -38,6 +38,14 @@
 }
 
 @media (min-width: $width-tablet) {
+
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+    width: 400px;
+  }
+
   .site-list__item {
     margin-right: 36px;
 

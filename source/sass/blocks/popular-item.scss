@@ -163,11 +163,6 @@
     padding-right: 376px;
   }
 
-  .popular-item__description-wrapper {
-    width: 292px;
-    margin-bottom: 55px;
-  }
-
   .popular-item__description {
     margin-bottom: 36px;
     font-size: 17px;
@@ -176,6 +171,7 @@
 
   .popular-item__list {
     margin: 0;
+    margin-bottom: 55px;
   }
 
   .popular-item__field {
@@ -195,16 +191,11 @@
     right: 0;
 
     margin-bottom: 0;
-    margin-left: auto;
   }
 
   .popular-item__image {
     width: 334px;
     height: 405px;
-  }
-
-  .popular-item__price-wrapper {
-    width: 292px;
   }
 
   .popular-item__price {
