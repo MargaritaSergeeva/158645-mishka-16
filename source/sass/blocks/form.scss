@@ -236,7 +236,8 @@
   }
 }
 
-.form__field-label:hover {
+.form__field-label:hover,
+.form__field-label:focus-within {
 
   .form__icon-phone,
   .form__icon-mail {
@@ -489,6 +490,9 @@
       padding-left: 17px;
       padding-right: 17px;
 
+      font-size: 19px;
+      line-height: 19px;
+
       &::placeholder {
         font-size: 19px;
         line-height: 19px;
@@ -536,6 +540,8 @@
       width: 500px;
       padding-left: 17px;
 
+      font-size: 19px;
+      line-height: 19px;
 
       background-color: #f1f1f1;
 
@@ -585,6 +591,9 @@
     margin-bottom: 0;
     padding-top: 13px;
 
+    font-size: 19px;
+    line-height: 19px;
+
     &::placeholder {
       font-size: 19px;
       line-height: 19px;
@@ -598,9 +607,9 @@
   }
 
   .form__note {
+    max-width: 350px;
     margin-top: 9px;
     margin-bottom: 0;
-    max-width: 350px;
 
     font-size: 17px;
     line-height: 30px;
