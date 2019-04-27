@@ -206,50 +206,73 @@
   }
 }
 
-// @media (min-width: $width-desktop) {
-//   .popular-item {
-//     padding-top: 70px;
-//     padding-bottom: 70px;
-//   }
+@media (min-width: $width-desktop) {
+  .popular-item {
 
-//   .popular-item__title-wrapper {
-//     margin-bottom: 60px;
-//     padding-top: 70px;
-//   }
+    &::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: 0;
 
-//   .popular-item__title {
-//     width: 175px;
-//     margin-left: 0;
-//     padding-top: 10px;
-//     padding-right: 45px;
-//     padding-left: 45px;
-//   }
+      width: 100%;
+      height: 34px;
 
-//   .popular-item__item-title {
-//     order: 0;
-//     width: 550px;
-//     margin-bottom: 0;
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-repeat: repeat;
+      background-size: auto 34px;
+    }
+  }
 
-//     font-size: 53px;
-//     line-height: 57px;
-//   }
+  .popular-item__all-wrapper {
+    padding-top: 125px;
+    padding-bottom: 72px;
+  }
 
-//   .popular-item__wrapper {
-//     padding-left: 175px;
-//     padding-right: 525px;
-//   }
+  .popular-item__title-wrapper {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 49px;
+  }
 
-//   .popular-item__image {
-//     top: -185px;
-//     z-index: -1;
+  .popular-item__title {
+    width: 175px;
+    margin-left: 0;
+    padding-top: 10px;
+    padding-right: 45px;
+    padding-left: 35px;
+  }
 
-//     width: 525px;
-//     height: 637px;
-//     margin-bottom: 0;
-//     margin-left: auto;
-//   }
+  .popular-item__item-title {
+    order: 0;
+    width: 550px;
+    margin-bottom: 0;
+  }
 
-//   .popular-item__description-wrapper {
-//     margin-bottom: 105px;
-//   }
-// }
+  .popular-item__link {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .popular-item__wrapper {
+    padding-left: 175px;
+    padding-right: 583px;
+  }
+
+  .popular-item__image-link {
+    top: -158px;
+  }
+
+  .popular-item__image {
+    width: 525px;
+    height: 637px;
+  }
+
+  .popular-item__description {
+    margin-bottom: 49px;
+  }
+
+  .popular-item__list {
+    margin-bottom: 108px;
+  }
+}
