@@ -21,11 +21,11 @@
   }
 }
 
-//  @media (min-width: $width-desktop) {
-//    .main-title {
-//      width: 620px;
+@media (min-width: $width-desktop) {
+  .main-title {
+    width: 620px;
 
-//     font-size: 53px;
-//     line-height: 57px;
-//   }
-// }
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
