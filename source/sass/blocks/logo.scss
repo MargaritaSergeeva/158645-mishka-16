@@ -37,3 +37,10 @@
     height: 46px;
   }
 }
+
+@media (min-width: $width-desktop) {
+  .logo__image {
+    width: 149px;
+    height: 72px;
+  }
+}

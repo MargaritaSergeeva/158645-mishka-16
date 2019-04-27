@@ -51,7 +51,7 @@
   }
 }
 
- @media (min-width: $width-tablet) {
+@media (min-width: $width-tablet) {
 
   .cart {
     width: 263px;
@@ -85,5 +85,11 @@
       width: 21px;
       height: 19px;
     }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .cart {
+    width: 264px;
   }
 }

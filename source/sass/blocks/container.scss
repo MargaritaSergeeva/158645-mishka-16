@@ -5,14 +5,14 @@
 }
 
 @media (min-width: $width-tablet) {
-  
+
   .container {
    width: $width-tablet;
   }
 }
 
-// @media (min-width: $width-desktop) {
-//   .container {
-//     width: $width-desktop;
-//   }
-// }
+@media (min-width: $width-desktop) {
+  .container {
+    width: $width-desktop;
+  }
+}

@@ -21,16 +21,12 @@
   }
 }
 
-// @media (min-width: $width-desktop) {
-//   .site-wrapper {
-//     background-image: linear-gradient(#ffffff 85px, #f9f9f9 85px, #f9f9f9 860px, #ffffff 860px);
+@media (min-width: $width-desktop) {
+  .site-wrapper {
+    background-image: linear-gradient(#ffffff 88px, #f9f9f9 88px, #f9f9f9 860px, #ffffff 860px);
 
-//     &--inner {
-//       background-image: linear-gradient(#ffffff 85px, #f1f1f1 85px, #f1f1f1 335px, #ffffff 335px);
-//     }
-
-//     &::after {
-//       display: none;
-//     }
-//   }
-// }
+    &--inner {
+      background-image: linear-gradient(#ffffff 88px, #f1f1f1 88px, #f1f1f1 335px, #ffffff 335px);
+    }
+  }
+}

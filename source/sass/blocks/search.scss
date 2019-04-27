@@ -90,8 +90,8 @@
   }
  }
 
-// @media (min-width: $width-desktop) {
-//   .search__link {
-//     padding-bottom: 31px;
-//   }
-// }
+@media (min-width: $width-desktop) {
+  .search {
+    width: 83px;
+  }
+}
