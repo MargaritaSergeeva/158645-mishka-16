@@ -49,9 +49,12 @@
 }
 
 @media (min-width: $width-tablet) {
+  .switcher {
+    margin-top: 7px;
+  }
+
   .switcher__button {
     width: 90px;
-    margin-top: 7px;
 
     border: none;
 
@@ -62,5 +65,13 @@
     &--prev::after {
       left: 24px;
     }
+  }
+}
+
+
+@media (min-width: $width-desktop) {
+
+  .switcher {
+    margin-top: 6px;
   }
 }

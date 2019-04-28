@@ -221,14 +221,43 @@
   }
 }
 
-// @media (min-width: $width-desktop) {
-//   .advantages__wrapper {
-//     padding-right: 225px;
-//     padding-left: 225px;
-//   }
+@media (min-width: $width-desktop) {
+  .advantages {
+    @include indent;
 
-//   .advantages__title {
-//     font-size: 53px;
-//     line-height: 57px;
-//   }
-// }
+    &::before {
+      display: none;
+    }
+  }
+
+  .advantages__wrapper {
+    position: relative;
+    padding-top: 82px;
+    padding-bottom: 34px;
+    padding-right: 200px;
+    padding-left: 174px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 23px;
+
+      background-image: url("../../img/bg-zigzag-line.svg");
+      background-repeat: repeat;
+      background-size: auto 23px;
+    }
+  }
+
+  .advantages__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .advantages__list {
+    width: 605px;
+  }
+}
