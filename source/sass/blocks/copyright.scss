@@ -16,11 +16,6 @@
   text-decoration: none;
   vertical-align: middle;
 
-  svg {
-    width: 27px;
-    height: 34px;
-  }
-
   &:hover,
   &:focus {
     outline: none;
@@ -41,6 +36,11 @@
 
 .copyright__text {
   margin-right: 30px;
+}
+
+.copyright__logo {
+  width: 27px;
+  height: 34px;
 }
 
 @media (min-width: $width-tablet) {
