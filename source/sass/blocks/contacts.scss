@@ -108,6 +108,8 @@
 
 @media (min-width: $width-tablet) {
   .contacts {
+    padding-top: 57px;
+    padding-bottom: 57px;
 
     &::before {
       height: 17px;
@@ -120,8 +122,6 @@
     @include indent;
     width: $width-tablet;
     margin-bottom: 56px;
-    padding-top: 57px;
-    padding-bottom: 57px;
   }
 
   .contacts__title {

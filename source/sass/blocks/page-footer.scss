@@ -39,6 +39,18 @@
 
   .page-footer__social {
     margin-bottom: 0;
+    margin-right: 63px;
     padding-top: 6px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+
+  .page-footer__logo-wrapper {
+    margin-right: 350px;
+  }
+
+  .page-footer__social {
+    margin-right: 253px;
   }
 }
