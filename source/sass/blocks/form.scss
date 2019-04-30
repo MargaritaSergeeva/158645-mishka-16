@@ -82,14 +82,12 @@
   }
 
   &:hover {
-
     &::before {
       border: 2px solid $color-green;
     }
   }
 
   &:active {
-
     &::before {
       background-color: $color-white;
 
@@ -139,14 +137,12 @@
   }
 
   &:hover {
-
     &::before {
       border: 2px solid $color-green;
     }
   }
 
   &:active {
-
     &::before {
       border: 2px solid rgba($main-color, 0.3);
     }
@@ -226,7 +222,6 @@
 }
 
 .form__contacts-wrapper {
-
   .form__input-block {
     margin-bottom: 26px;
   }
@@ -239,7 +234,6 @@
 
 .form__field-label:hover,
 .form__field-label:focus-within {
-
   .form__icon-phone,
   .form__icon-mail {
     opacity: 1;
@@ -252,7 +246,6 @@
 }
 
 .form__field-label:active {
-
   .form__icon-phone,
   .form__icon-mail {
     opacity: 1;
@@ -376,7 +369,7 @@
     align-items: baseline;
     padding-top: 48px;
     padding-bottom: 50px;
-    padding-right: 0px;
+    padding-right: 0;
   }
 
   .form__filters--type {
@@ -656,7 +649,6 @@
 
   .form__filters--color {
     padding-right: 100px;
-
   }
 
   .form__field-name-wrapper {

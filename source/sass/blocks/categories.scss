@@ -20,7 +20,6 @@
   }
 
   &:hover {
-
     &::after {
       display: block;
     }
@@ -35,7 +34,6 @@
   }
 
   &:focus-within {
-
     &::after {
       display: block;
     }
@@ -110,7 +108,7 @@
   }
 }
 
- @media (min-width: $width-tablet) {
+@media (min-width: $width-tablet) {
   .categories__wrapper {
     @include indent;
     width: $width-tablet;
@@ -180,6 +178,5 @@
     &--toys::before {
       right: 35px;
     }
-
   }
 }

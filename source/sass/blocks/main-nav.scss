@@ -18,7 +18,7 @@
   height: 20px;
 
   background-color: transparent;
-  background-position: no-repeat;
+  background-repeat: no-repeat;
   background-position: 100%;
   border: none;
 
@@ -63,7 +63,7 @@
     padding-bottom: 19px;
 
     border: none;
-   }
+  }
 
   .main-nav__toggle {
     display: none;
@@ -78,10 +78,9 @@
     flex-wrap: wrap;
     order: 1;
   }
- }
+}
 
 @media (min-width: $width-desktop) {
-
   .main-nav__wrapper-logo {
     order: 2;
     width: 290px;
