@@ -30,12 +30,17 @@
   }
 }
 
-// @media (min-width: $width-desktop) {
-//   .inner-main__video {
-//     margin-bottom: 105px;
-//   }
+@media (min-width: $width-desktop) {
+  .inner-main__title {
+    padding-top: 32px;
+    padding-bottom: 103px;
+  }
 
-//   .inner-main__title {
-//     padding-bottom: 100px;
-//   }
-// }
+  .inner-main__goods {
+    margin-bottom: 12px;
+  }
+
+  .inner-main__video {
+    margin-bottom: 104px;
+  }
+}
