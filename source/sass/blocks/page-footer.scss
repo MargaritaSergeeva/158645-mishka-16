@@ -48,6 +48,20 @@
 
   .page-footer__logo-wrapper {
     margin-right: 350px;
+
+    &:hover {
+
+      path {
+        fill: #46c1ae;
+      }
+    }
+
+    &:active {
+
+      path {
+        fill: rgba(#46c1ae, 0.3);
+      }
+    }
   }
 
   .page-footer__social {
