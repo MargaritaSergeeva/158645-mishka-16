@@ -1,6 +1,6 @@
 .contacts__wrapper {
-  position: relative;
   @include indent-mobile;
+  position: relative;
   width: $width-mobile;
   margin-right: auto;
   margin-left: auto;
@@ -205,13 +205,12 @@
       position: absolute;
       top: 0;
       left: 0;
-  
+
       width: 100%;
       height: 21px;
-  
+
       background-image: url("../../img/bg-zigzag-line.svg");
       background-repeat: repeat;
-      background-position-x: 5px;
       background-position-x: 26px;
       background-size: 1050px;
     }
