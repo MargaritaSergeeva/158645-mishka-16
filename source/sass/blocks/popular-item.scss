@@ -116,7 +116,8 @@
 
       background-image: url("../../img/bg-zigzag-fill.svg");
       background-repeat: repeat;
-      background-size: auto 24px;
+      background-position-x: 16px;
+      background-size: 770px;
     }
   }
 
@@ -187,7 +188,7 @@
 
   .popular-item__image-link {
     position: absolute;
-    top: 7px;
+    top: 8px;
     right: 0;
 
     margin-bottom: 0;
@@ -211,7 +212,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: -15px;
+      top: -16px;
       left: 0;
 
       width: 100%;
@@ -219,13 +220,14 @@
 
       background-image: url("../../img/bg-zigzag-fill.svg");
       background-repeat: repeat;
-      background-size: auto 34px;
+      background-position-x: center;
+      background-size: 1250px;
     }
   }
 
   .popular-item__all-wrapper {
     padding-top: 125px;
-    padding-bottom: 73px;
+    padding-bottom: 74px;
   }
 
   .popular-item__title-wrapper {
