@@ -1,8 +1,8 @@
 .button {
   display: block;
   width: auto;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 15px;
+  padding-bottom: 13px;
   padding-right: 0;
   padding-left: 0;
 
@@ -14,14 +14,17 @@
   text-decoration: none;
   text-align: center;
 
-  background-color: $color-white;
+  background-color: transparent;
   border: 2px solid $main-color;
 
   cursor: pointer;
+  transition: 0.3s ease-in;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-white;
     background-color: $main-color;
+    outline: none;
   }
 
   &:active {
@@ -34,7 +37,8 @@
     background-color: $color-green;
     border: 2px solid $color-green;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $color-white;
       background-color: $color-green;
       border: 2px solid $color-green;

@@ -1,13 +1,46 @@
 .logo {
-  display: flex;
-  align-items: center;
-  width: fit-content;
+  display: block;
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
+
+  line-height: 0;
+  text-align: center;
+
+  &[href]:hover,
+  &[href]:focus {
+    outline: none;
+
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+}
+
+.logo__image {
+  width: 86px;
+  height: 35px;
 }
 
 @media (min-width: $width-tablet) {
   .logo {
+    width: auto;
     margin-left: 0;
+
+    text-align: left;
+  }
+
+  .logo__image {
+    width: 113px;
+    height: 46px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .logo__image {
+    width: 149px;
+    height: 72px;
   }
 }

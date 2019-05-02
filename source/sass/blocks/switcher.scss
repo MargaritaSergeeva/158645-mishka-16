@@ -6,18 +6,20 @@
   position: relative;
 
   width: 130px;
-  height: 50px;
+  height: 52px;
   margin: 0;
   padding: 0;
 
-  background-color: $color-white;
+  background-color: transparent;
   border: 1px solid $color-light-grey;
+
+  outline: none;
 
   &::after {
     content: "";
     position: absolute;
-    top: 25%;
-    left: 30%;
+    top: 12px;
+    left: 37px;
     width: 50px;
     height: 26px;
 
@@ -29,14 +31,15 @@
   }
 
   &--prev::after {
-    background-image: url("../../img/icon-left-arrow.svg");
+    background-image: url("../img/icon-left-arrow.svg");
   }
 
   &--next::after {
-    background-image: url("../../img/icon-right-arrow.svg");
+    background-image: url("../img/icon-right-arrow.svg");
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     opacity: 0.6;
   }
 
@@ -46,13 +49,28 @@
 }
 
 @media (min-width: $width-tablet) {
+  .switcher {
+    margin-top: 7px;
+  }
+
   .switcher__button {
-    width: 80px;
+    width: 90px;
 
     border: none;
 
     &::after {
-      left: 20%;
+      left: 21px;
     }
+
+    &--prev::after {
+      left: 24px;
+    }
+  }
+}
+
+
+@media (min-width: $width-desktop) {
+  .switcher {
+    margin-top: 6px;
   }
 }

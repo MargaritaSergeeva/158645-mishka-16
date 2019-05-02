@@ -1,14 +1,31 @@
 .advantages {
-  padding-top: 40px;
-  padding-bottom: 35px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat;
+    background-position-x: 5px;
+    background-size: 325px;
+  }
 }
 
 .advantages__wrapper {
   @include indent-mobile;
+  padding-top: 33px;
+  padding-bottom: 10px;
 }
 
 .advantages__title {
   margin: 0;
+  margin-bottom: 30px;
 
   font-size: 25px;
   line-height: 30px;
@@ -21,28 +38,128 @@
 }
 
 .advantages__item {
+  position: relative;
   width: 220px;
-  padding-top: 70px;
-  padding-bottom: 10px;
+  margin-bottom: 29px;
+  padding-top: 55px;
 
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
   color: $color-black;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+.advantages__item--eco {
+  &::before {
+    top: 2px;
+    left: 8px;
+
+    width: 32px;
+    height: 37px;
+
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+}
+
+.advantages__item--style {
+  &::before {
+    top: 2px;
+    left: 0;
+
+    width: 47px;
+    height: 27px;
+
+    background-image: url("../img/icon-feature-money.svg");
+  }
+}
+
+.advantages__item--like {
+  margin-bottom: 28px;
+
+  &::before {
+    top: 5px;
+    left: 7px;
+
+    width: 34px;
+    height: 29px;
+
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+}
+
+.advantages__item--handmade {
+  margin-bottom: 27px;
+
+  &::before {
+    top: 3px;
+    left: 4px;
+
+    width: 35px;
+    height: 35px;
+
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+}
+
+.advantages__item--russian {
+  margin-bottom: 28px;
+
+  &::before {
+    top: 5px;
+    left: -6px;
+
+    width: 55px;
+    height: 23px;
+
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+}
+
+.advantages__item--gift {
+  &::before {
+    top: 4px;
+    left: 3px;
+
+    width: 33px;
+    height: 32px;
+
+    background-image: url("../img/icon-feature-gift.svg");
+  }
 }
 
 @media (min-width: $width-tablet) {
   .advantages {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    &::before {
+      top: 1px;
+
+      height: 15px;
+
+      background-position-x: 16px;
+      background-size: 775px;
+    }
   }
 
   .advantages__wrapper {
     @include indent;
+    padding-top: 66px;
+    padding-bottom: 27px;
   }
 
   .advantages__title {
-    margin-bottom: 35px;
+    margin-left: -3px;
+    margin-bottom: 48px;
 
     font-size: 43px;
     line-height: 50px;
@@ -50,49 +167,100 @@
 
   .advantages__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    width: 588px;
   }
 
   .advantages__item {
-    width: 250px;
-    margin-bottom: 30px;
+    width: 254px;
+    margin-bottom: 56px;
 
     font-size: 20px;
     line-height: 22px;
 
+    &--eco {
+      &::before {
+        top: 1px;
+        left: 9px;
+      }
+    }
+
     &--handmade {
       order: 1;
-      margin-left: 80px;
     }
 
     &--style {
       order: 2;
+
+      &::before {
+        top: 2px;
+        left: 1px;
+      }
     }
 
     &--russian {
       order: 3;
-      margin-left: 80px;
     }
 
     &--like {
       order: 4;
+
+      &::before {
+        top: 6px;
+        left: 8px;
+      }
     }
 
     &--gift {
       order: 5;
-      margin-left: 80px;
+
+      &::before {
+        top: 3px;
+        left: 3px;
+      }
     }
   }
 }
 
 @media (min-width: $width-desktop) {
+  .advantages {
+    @include indent;
+
+    &::before {
+      display: none;
+    }
+  }
+
   .advantages__wrapper {
-    padding-right: 225px;
-    padding-left: 225px;
+    position: relative;
+    padding-top: 81px;
+    padding-bottom: 34px;
+    padding-right: 200px;
+    padding-left: 174px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 21px;
+
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat;
+      background-position-x: 26px;
+      background-size: 1050px;
+    }
   }
 
   .advantages__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .advantages__list {
+    width: 605px;
   }
 }

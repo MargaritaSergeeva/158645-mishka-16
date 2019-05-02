@@ -1,10 +1,7 @@
-.goods {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 .goods__wrapper {
   @include indent-mobile;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .goods__item {
@@ -18,38 +15,50 @@
 @media (min-width: $width-tablet) {
   .goods {
     position: relative;
-    margin-bottom: 25px;
 
     &::before {
       content: "";
       position: absolute;
-      top: -20px;
+      top: -12px;
       left: 0;
 
       width: 100%;
       height: 24px;
 
-      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat;
+      background-position-x: 6px;
+      background-size: 770px;
     }
   }
 
   .goods__wrapper {
     @include indent;
+    padding-top: 79px;
   }
 
   .goods__item {
-    margin-bottom: 55px;
+    margin-bottom: 54px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .goods {
-    padding-top: 140px;
+    &::before {
+      top: -15px;
+
+      height: 34px;
+
+      background-position-x: 42px;
+      background-size: 1150px;
+    }
   }
 
   .goods__wrapper {
     display: flex;
+    padding-top: 130px;
+    padding-left: 49px;
+    padding-right: 51px;
   }
 
   .goods__item {

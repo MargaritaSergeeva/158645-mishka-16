@@ -12,6 +12,9 @@
 @media (min-width: $width-tablet) {
   .page-header {
     @include indent;
+    width: $width-tablet;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .page-header__info {
@@ -20,5 +23,11 @@
     bottom: 20px;
 
     display: block;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .page-header {
+    width: $width-desktop;
   }
 }

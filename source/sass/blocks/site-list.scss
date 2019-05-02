@@ -2,14 +2,21 @@
   @include list-reset;
 }
 
+.site-list__item {
+  border-bottom: 1px solid $color-light-grey;
+}
+
 .site-list__item--optional {
   display: none;
 }
 
 .site-list__link {
   display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  width: $width-mobile;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 26px;
+  padding-bottom: 28px;
   padding-left: 75px;
 
   font-size: 17px;
@@ -18,10 +25,11 @@
   color: $color-black;
   text-decoration: none;
 
-  border-bottom: 1px solid $color-light-grey;
-
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba($color-black, 0.6);
+
+    outline: none;
   }
 
   &:active {
@@ -30,8 +38,16 @@
 }
 
 @media (min-width: $width-tablet) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+  }
+
   .site-list__item {
-    margin-right: 25px;
+    margin-right: 36px;
+
+    border: none;
 
     &:last-child {
       margin-right: 0;
@@ -39,13 +55,12 @@
   }
 
   .site-list__link {
-    padding-top: 20px;
+    width: auto;
+    padding-top: 17px;
     padding-bottom: 20px;
     padding-left: 0;
 
     font-size: 15px;
-
-    border: none;
   }
 }
 
@@ -55,13 +70,14 @@
   }
 
   .site-list__item {
+    max-width: 190px;
     margin: 0;
 
     &--optional {
       display: block;
 
       .site-list__link {
-        padding-top: 20px;
+        padding-top: 17px;
         padding-bottom: 20px;
         padding-right: 27px;
 
@@ -69,19 +85,32 @@
       }
     }
 
-    &:first-child {
-      padding-right: 35px;
-      border-right: 1px solid $color-light-grey;
+    &--catalog {
+      position: relative;
+
+      padding-right: 36px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        width: 1px;
+        height: 88px;
+
+        background-color: $color-light-grey;
+      }
     }
 
     &:nth-child(2n) {
-      margin-left: 35px;
+      margin-left: 34px;
     }
   }
 
   .site-list__link {
-    padding-top: 30px;
-    padding-bottom: 31px;
+    padding-top: 31px;
+    padding-bottom: 34px;
 
     font-size: 17px;
   }
