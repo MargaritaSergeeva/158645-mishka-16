@@ -154,7 +154,7 @@
 }
 
 .form__checkbox-input:checked + .form__checkbox-name::before {
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 62%;
@@ -347,7 +347,7 @@
       width: 100%;
       height: 24px;
 
-      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat;
       background-position-x: 5px;
       background-size: 770px;
