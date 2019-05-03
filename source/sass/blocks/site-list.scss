@@ -41,7 +41,6 @@
   .site-list {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
   }
 
   .site-list__item {
@@ -49,7 +48,7 @@
 
     border: none;
 
-    &:last-child {
+    &:nth-child(2n) {
       margin-right: 0;
     }
   }

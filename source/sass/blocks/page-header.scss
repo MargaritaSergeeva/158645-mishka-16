@@ -1,12 +1,5 @@
-.page-header {
-  position: relative;
-}
-
 .page-header__info {
   display: none;
-  margin: 0;
-
-  line-height: 24px;
 }
 
 @media (min-width: $width-tablet) {
@@ -18,16 +11,25 @@
   }
 
   .page-header__info {
-    position: absolute;
-    right: 50px;
-    bottom: 20px;
-
     display: block;
+    margin: 0;
+    margin-left: auto;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    line-height: 24px;
+    color: $main-color;
+    text-decoration: none;
   }
 }
 
 @media (min-width: $width-desktop) {
   .page-header {
     width: $width-desktop;
+  }
+
+  .page-header__info {
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 }

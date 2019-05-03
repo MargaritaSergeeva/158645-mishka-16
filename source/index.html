@@ -10,28 +10,30 @@
   <body class="site-wrapper">
     <header class="page-header">
       <nav class="main-nav main-nav--closed">
-        <div class="main-nav__wrapper-logo">
-          <a class="main-nav__logo logo">
-            <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта MISHKA">
-          </a>
-        </div>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list site-list pop-up">
-          <li class="site-list__item site-list__item--catalog">
-            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="order.html">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item site-list__item--optional">
-            <a class="site-list__link" href="order.html">Новые поступления</a>
-          </li>
-          <li class="site-list__item site-list__item--optional">
-            <a class="site-list__link" href="order.html">Распродажа</a>
-          </li>
-        </ul>
+        <div class="main-nav__logo-list-wrapper">
+          <div class="main-nav__wrapper-logo">
+            <a class="main-nav__logo logo">
+              <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта MISHKA">
+            </a>
+          </div>
+          <ul class="main-nav__list site-list pop-up">
+            <li class="site-list__item site-list__item--catalog">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="order.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item site-list__item--optional">
+              <a class="site-list__link" href="order.html">Новые поступления</a>
+            </li>
+            <li class="site-list__item site-list__item--optional">
+              <a class="site-list__link" href="order.html">Распродажа</a>
+            </li>
+          </ul>
+        </div>
         <div class="main-nav__search-cart-wrapper pop-up">
           <div class="main-nav__search search">
             <a class="search__link" href="#" aria-label="Поиск по сайту">
@@ -50,9 +52,9 @@
               <span class="cart__change-text">пока пуста</span>
             </a>
           </div>
+          <a class="page-header__info" href="#">Бесплатная доставка по России</a>
         </div>
       </nav>
-      <p class="page-header__info">Бесплатная доставка по России</p>
     </header>
     <main class="index-main">
       <div class="index-main__title-categories-wrapper">
