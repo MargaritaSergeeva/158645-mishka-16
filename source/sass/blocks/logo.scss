@@ -39,6 +39,10 @@
 }
 
 @media (min-width: $width-desktop) {
+  .logo {
+    margin-left: 69px;
+  }
+
   .logo__image {
     width: 149px;
     height: 72px;
