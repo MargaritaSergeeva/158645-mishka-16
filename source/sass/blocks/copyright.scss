@@ -35,16 +35,14 @@
 }
 
 .copyright__link-icon {
+  width: 27px;
+  height: 34px;
+
   fill: #63d1bb;
 }
 
 .copyright__text {
   margin-right: 30px;
-}
-
-.copyright__logo {
-  width: 27px;
-  height: 34px;
 }
 
 @media (min-width: $width-tablet) {
