@@ -18,16 +18,14 @@
   color: $color-black;
   text-decoration: none;
 
-  svg {
+  .cart__link-icon {
     position: absolute;
     top: 28px;
     left: 30px;
 
     width: 21px;
     height: 19px;
-  }
 
-  path {
     fill: #d3d2d2;
   }
 
@@ -37,7 +35,7 @@
 
     outline: none;
 
-    path {
+    .cart__link-icon {
       fill: $color-green;
     }
   }
@@ -45,7 +43,7 @@
   &:active {
     color: rgba($color-black, 0.3);
 
-    path {
+    .cart__link-icon {
       fill: rgba($color-green, 0.3);
     }
   }
@@ -77,7 +75,7 @@
       background-color: $color-light-grey;
     }
 
-    svg {
+    .cart__link-icon {
       top: 34px;
       left: 32px;
 

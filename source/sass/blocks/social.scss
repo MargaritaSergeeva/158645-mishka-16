@@ -25,13 +25,13 @@
   &:focus {
     outline: none;
 
-    path {
+    .social__link-icon {
       fill: #46c1ae;
     }
   }
 
   &:active {
-    path {
+    .social__link-icon {
       fill: rgba(#46c1ae, 0.3);
     }
   }
