@@ -234,30 +234,22 @@
 
 .form__field-label:hover,
 .form__field-label:focus-within {
-  .form__icon-phone,
-  .form__icon-mail {
+  .form__phone-icon,
+  .form__mail-icon {
     opacity: 1;
-  }
-
-  .form__icon-phone-part,
-  .form__icon-mail-part {
     fill: #62d1ba;
   }
 }
 
 .form__field-label:active {
-  .form__icon-phone,
-  .form__icon-mail {
+  .form__phone-icon,
+  .form__mail-icon {
     opacity: 1;
-  }
-
-  .form__icon-phone-part,
-  .form__icon-mail-part {
     fill: #62d1ba;
   }
 }
 
-.form__icon-phone {
+.form__phone-icon {
   position: absolute;
   right: 8px;
   bottom: 18px;
@@ -272,7 +264,7 @@
   padding-right: 24px;
 }
 
-.form__icon-mail {
+.form__mail-icon {
   position: absolute;
   right: 4px;
   bottom: 11px;
@@ -553,12 +545,12 @@
     }
   }
 
-  .form__icon-phone {
+  .form__phone-icon {
     right: 28px;
     bottom: 17px;
   }
 
-  .form__icon-mail {
+  .form__mail-icon {
     right: 24px;
     bottom: 11px;
   }
@@ -703,11 +695,11 @@
     }
   }
 
-  .form__icon-phone {
+  .form__phone-icon {
     right: 11px;
   }
 
-  .form__icon-mail {
+  .form__mail-icon {
     right: 7px;
   }
 

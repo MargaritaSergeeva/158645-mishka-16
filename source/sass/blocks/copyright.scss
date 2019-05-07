@@ -20,7 +20,7 @@
   &:focus {
     outline: none;
 
-    path {
+    .copyright__link-icon {
       fill: #46c1ae;
     }
   }
@@ -28,19 +28,21 @@
   &:active {
     color: rgba($color-black, 0.3);
 
-    path {
+    .copyright__link-icon {
       fill: rgba(#46c1ae, 0.3);
     }
   }
 }
 
-.copyright__text {
-  margin-right: 30px;
-}
-
-.copyright__logo {
+.copyright__link-icon {
   width: 27px;
   height: 34px;
+
+  fill: #63d1bb;
+}
+
+.copyright__text {
+  margin-right: 30px;
 }
 
 @media (min-width: $width-tablet) {

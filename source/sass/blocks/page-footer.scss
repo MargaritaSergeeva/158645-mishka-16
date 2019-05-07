@@ -38,6 +38,18 @@
       width: 102px;
       height: 34px;
     }
+
+    &:hover {
+      .logo__image {
+        fill: #46c1ae;
+      }
+    }
+
+    &:active {
+      .logo__image {
+        fill: rgba(#46c1ae, 0.3);
+      }
+    }
   }
 
   .page-footer__social {
@@ -50,18 +62,6 @@
 @media (min-width: $width-desktop) {
   .page-footer__logo-wrapper {
     margin-right: 350px;
-
-    &:hover {
-      path {
-        fill: #46c1ae;
-      }
-    }
-
-    &:active {
-      path {
-        fill: rgba(#46c1ae, 0.3);
-      }
-    }
   }
 
   .page-footer__social {

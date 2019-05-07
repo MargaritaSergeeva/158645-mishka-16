@@ -18,16 +18,14 @@
   color: $color-black;
   text-decoration: none;
 
-  svg {
+  .search__link-icon {
     position: absolute;
     top: 31px;
     left: 32px;
 
-    width: 18px;
-    height: 18px;
-  }
+    width: 20px;
+    height: 20px;
 
-  path {
     fill: #d3d2d2;
   }
 
@@ -37,7 +35,7 @@
 
     outline: none;
 
-    path {
+    .search__link-icon {
       fill: $color-green;
     }
   }
@@ -45,7 +43,7 @@
   &:active {
     color: rgba($color-black, 0.3);
 
-    path {
+    .search__link-icon {
       fill: rgba($color-green, 0.3);
     }
   }
@@ -68,7 +66,7 @@
 
     border-bottom: none;
 
-    svg {
+    .search__link-icon {
       top: 37px;
       left: 34px;
 
