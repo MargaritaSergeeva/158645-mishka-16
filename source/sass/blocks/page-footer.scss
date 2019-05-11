@@ -29,17 +29,13 @@
   .page-footer__logo-wrapper {
     display: block;
     margin-right: 159px;
+  }
 
-    .logo {
-      margin-left: 0;
-    }
+  .page-footer__logo {
+    margin-left: 0;
 
-    .logo__image {
-      width: 102px;
-      height: 34px;
-    }
-
-    &:hover {
+    &:hover,
+    &:focus {
       .logo__image {
         fill: #46c1ae;
       }
@@ -49,6 +45,11 @@
       .logo__image {
         fill: rgba(#46c1ae, 0.3);
       }
+    }
+
+    .logo__image {
+      width: 102px;
+      height: 34px;
     }
   }
 
