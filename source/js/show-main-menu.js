@@ -12,5 +12,3 @@ var navToggle = document.querySelector('.main-nav__toggle');
       navMain.classList.remove('main-nav--opened');
     }
   });
-
-
