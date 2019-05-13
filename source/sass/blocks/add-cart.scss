@@ -2,6 +2,14 @@
   display: none;
 }
 
+.add-cart.add-cart--modal-show {
+  display: block;
+}
+
+.add-cart--animation {
+  animation: bloom 1s;
+}
+
 .add-cart {
   position: fixed;
   top: 20%;

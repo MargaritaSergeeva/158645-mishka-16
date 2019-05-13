@@ -2,28 +2,33 @@ var overlay = document.querySelector('.overlay');
 var modal = document.querySelector('.add-cart');
 var orderButton = document.querySelector('.popular-item__order');
 
+var modalOpen = function () {
+  modal.classList.add('add-cart--modal-show');
+  overlay.classList.add('overlay--show');
+  modal.classList.add('add-cart--animation');
+}
+
+var modalClose = function () {
+  modal.classList.remove('add-cart--modal-show');
+  overlay.classList.remove('overlay--show');
+  modal.classList.remove('add-cart--animation');
+}
 
   orderButton.addEventListener('click', function (evt) {
     evt.preventDefault();
-    modal.classList.add('popular-item__modal-show');
-    overlay.classList.add('popular-item__modal-show');
-    modal.classList.add('popular-item__animation');
+    modalOpen ();
   });
 
   window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
-      if (modal.classList.contains('popular-item__modal-show')) {
-        modal.classList.remove('popular-item__modal-show');
-        overlay.classList.remove('popular-item__modal-show');
-        modal.classList.remove('popular-item__animation');
+      if (modal.classList.contains('add-cart--modal-show')) {
+        modalClose ();
       }
     }
   });
 
   overlay.addEventListener('click', function(evt) {
     evt.preventDefault();
-    modal.classList.remove('popular-item__modal-show');
-    overlay.classList.remove('popular-item__modal-show');
-    modal.classList.remove('popular-item__animation');
+    modalClose ();
   });

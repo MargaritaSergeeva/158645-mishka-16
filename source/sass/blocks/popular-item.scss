@@ -101,16 +101,6 @@
   text-align: center;
 }
 
-.popular-item__wrapper {
-  .popular-item__modal-show {
-    display: block;
-  }
-
-  .popular-item__animation {
-    animation: bloom 1s;
-  }
-}
-
 @media (min-width: $width-tablet) {
   .popular-item {
     position: relative;

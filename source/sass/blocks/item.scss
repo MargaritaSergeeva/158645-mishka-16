@@ -91,16 +91,6 @@
   }
 }
 
-.item {
-  .item__modal-show {
-    display: block;
-  }
-
-  .item__animation {
-    animation: bloom 1s;
-  }
-}
-
 @media (min-width: $width-tablet) {
   .item {
     display: flex;
