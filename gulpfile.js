@@ -4,14 +4,16 @@ var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var rename = require("gulp-rename");
-var svgstore = require("gulp-svgstore");
-var imagemin = require("gulp-imagemin");
-var webp = require("gulp-webp");
+var server = require("browser-sync").create();
 var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
-var server = require("browser-sync").create();
+var imagemin = require("gulp-imagemin");
+var webp = require("gulp-webp");
+var svgstore = require("gulp-svgstore");
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -28,17 +30,21 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-gulp.task("server", function () {
-  server.init({
-    server: "source/",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
-  });
+gulp.task("sprite", function () {
+  return gulp.src("source/img/*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+});
 
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
+gulp.task("html", function () {
+  return gulp.src("source/*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("images", function () {
@@ -57,13 +63,17 @@ gulp.task("webp", function () {
     .pipe(gulp.dest("source/img"));
 });
 
-gulp.task("sprite", function () {
-  return gulp.src("source/img/*.svg")
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"));
+gulp.task("server", function () {
+  server.init({
+    server: "source/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  });
+
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
+  gulp.watch("source/*.html").on("change", server.reload);
 });
 
 gulp.task("start", gulp.series("css", "server"));
