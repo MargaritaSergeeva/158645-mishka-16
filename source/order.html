@@ -5,17 +5,20 @@
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="site-wrapper site-wrapper--inner">
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__logo-list-wrapper">
           <div class="main-nav__wrapper-logo">
-            <a class="main-nav__logo logo" href="index.html">
+            <a class="main-nav__logo logo" href="index.html" aria-label="Логотип сайта MISHKA">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -31,10 +34,10 @@
               <a class="site-list__link" href="order.html">Вязание на заказ</a>
             </li>
             <li class="site-list__item site-list__item--optional">
-              <a class="site-list__link" href="order.html">Новые поступления</a>
+              <a class="site-list__link" href="new.html">Новые поступления</a>
             </li>
             <li class="site-list__item site-list__item--optional">
-              <a class="site-list__link" href="order.html">Распродажа</a>
+              <a class="site-list__link" href="sale.html">Распродажа</a>
             </li>
           </ul>
         </div>
@@ -42,7 +45,7 @@
           <div class="main-nav__search search">
             <a class="search__link" href="#" aria-label="Поиск по сайту">
               <svg class="search__link-icon" width="18px" height="18px" focusable="false" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-search"></use>
+                <use xlink:href="#icon-search"></use>
               </svg>
               Поиск по сайту
             </a>
@@ -50,7 +53,7 @@
           <div class="main-nav__cart cart">
             <a class="cart__link" href="#">
               <svg class="cart__link-icon" width="21px" height="18px" focusable="false" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-cart"></use>
+                <use xlink:href="#icon-cart"></use>
               </svg>
               <span class="cart__main-text">Корзина:</span>
               <span class="cart__change-text">пока пуста</span>
@@ -124,7 +127,7 @@
                 <label class="form__field-label">
                   <span class="form__field-name">Тел</span>
                   <svg class="form__phone-icon" width="24.829px" height="24.333px" focusable="false" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    <use xlink:href="#icon-phone"></use>
                   </svg>
                   <input class="form__input form__input--tel" type="tel" name="user-tel" placeholder="+7 XXX XXX XX XX*">
                 </label>
@@ -135,7 +138,7 @@
                 <label class="form__field-label">
                   <span class="form__field-name form__field-name--email">E-mail</span>
                   <svg class="form__mail-icon" width="32px" height="32px" focusable="false" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                    <use xlink:href="#icon-mail"></use>
                   </svg>
                   <input class="form__input form__input--email" type="email" name="user-email" placeholder="Ваш Email*">
                 </label>
@@ -158,9 +161,9 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
         <div class="page-footer__logo-wrapper">
-          <a class="page-footer__logo logo">
+          <a class="page-footer__logo logo" href="index.html" aria-label="Логотип сайта MISHKA">
             <svg class="logo__image" width="101.615px" height="34.056px" focusable="false" aria-hidden="true">
-              <use xlink:href="img/sprite.svg#icon-footer-logo"></use>
+              <use xlink:href="#logo-footer"></use>
             </svg>
           </a>
         </div>
@@ -170,7 +173,7 @@
             <li class="social__item">
               <a class="social__link social__link--instagram" href="#">
                 <svg class="social__link-icon" width="21.769px" height="21.334px" focusable="false" aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                  <use xlink:href="#icon-insta"></use>
                 </svg>
                 <span class="visually-hidden">Наш инстаграм</span>
               </a>
@@ -178,7 +181,7 @@
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#">
                 <svg class="social__link-icon" width="14.962px" height="27.718px" focusable="false" aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  <use xlink:href="#icon-fb"></use>
                 </svg>
                 <span class="visually-hidden">Наш фейсбук</span>
               </a>
@@ -186,7 +189,7 @@
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">
                 <svg class="social__link-icon" width="23.494px" height="20.168px" focusable="false" aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                  <use xlink:href="#icon-twitter"></use>
                 </svg>
                 <span class="visually-hidden">Наш твиттер</span>
               </a>
@@ -195,16 +198,16 @@
         </section>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">HTML Academy</span>
+            <span class="visually-hidden">Сайт HTML Academy</span>
             <b class="copyright__text">Разработано</b>
             <svg class="copyright__link-icon" width="26.943px" height="34.09px" focusable="false" aria-hidden="true">
-              <use xlink:href="img/sprite.svg#icon-copyright-logo"></use>
+              <use xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
     <script src="js/picturefill.js"></script>
-    <script src="js/svgxuse.js"></script>
+    <script src="js/show-main-menu.js"></script>
   </body>
 </html>
