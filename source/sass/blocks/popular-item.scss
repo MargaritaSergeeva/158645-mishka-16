@@ -28,7 +28,7 @@
   line-height: 30px;
 }
 
-.popular-item__link {
+.popular-item__title-link {
   display: block;
   text-decoration: none;
   font-size: 25px;
@@ -123,6 +123,9 @@
 
   .popular-item__all-wrapper {
     @include indent;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding-top: 47px;
     padding-bottom: 52px;
   }
@@ -154,14 +157,20 @@
     line-height: 50px;
   }
 
-  .popular-item__link {
+  .popular-item__title-link {
     font-size: 43px;
     line-height: 50px;
   }
 
   .popular-item__wrapper {
-    position: relative;
-    padding-right: 376px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .popular-item__discription-wrapper {
+    width: 290px;
+    padding-bottom: 158px;
   }
 
   .popular-item__description {
@@ -172,7 +181,6 @@
 
   .popular-item__list {
     margin: 0;
-    margin-bottom: 55px;
   }
 
   .popular-item__field {
@@ -187,10 +195,8 @@
   }
 
   .popular-item__image-link {
-    position: absolute;
-    top: 8px;
-    right: 1px;
-
+    margin-top: 8px;
+    margin-right: 1px;
     margin-bottom: 0;
   }
 
@@ -199,8 +205,13 @@
     height: 404px;
   }
 
+  .popular-item__order-wrapper {
+    width: 290px;
+    margin-top: -110px;
+  }
+
   .popular-item__price {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
 
     font-size: 20px;
     text-align: center;
@@ -227,7 +238,7 @@
 
   .popular-item__all-wrapper {
     padding-top: 125px;
-    padding-bottom: 74px;
+    padding-bottom: 73px;
   }
 
   .popular-item__title-wrapper {
@@ -250,18 +261,17 @@
     margin-bottom: 0;
   }
 
-  .popular-item__link {
+  .popular-item__title-link {
     font-size: 53px;
     line-height: 57px;
   }
 
   .popular-item__wrapper {
     padding-left: 175px;
-    padding-right: 583px;
   }
 
   .popular-item__image-link {
-    top: -158px;
+    margin-top: -158px;
   }
 
   .popular-item__image {
@@ -273,7 +283,8 @@
     margin-bottom: 49px;
   }
 
-  .popular-item__list {
-    margin-bottom: 108px;
+  .popular-item__order-wrapper {
+    width: 290px;
+    margin-top: -111px;
   }
 }
