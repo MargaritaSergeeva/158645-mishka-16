@@ -28,6 +28,7 @@
   .logo {
     width: auto;
     margin-left: 0;
+    margin-right: 205px;
 
     text-align: left;
   }
@@ -41,6 +42,7 @@
 @media (min-width: $width-desktop) {
   .logo {
     margin-left: 69px;
+    margin-right: 70px;
   }
 
   .logo__image {
