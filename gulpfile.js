@@ -125,6 +125,6 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean","copy", "css", "sprite", "html", "jsmin"));
 gulp.task("optiimg", gulp.series("images", "webp"));
-gulp.task("start", gulp.series("build", "optiimg", "server"));
+gulp.task("build", gulp.series("clean","copy", "css", "sprite", "html", "jsmin", "optiimg"));
+gulp.task("start", gulp.series("build", "server"));
