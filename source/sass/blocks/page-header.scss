@@ -1,7 +1,3 @@
-.page-header__info {
-  display: none;
-}
-
 @media (min-width: $width-tablet) {
   .page-header {
     padding-left: 48px;
@@ -10,28 +6,11 @@
     margin-right: auto;
     margin-left: auto;
   }
-
-  .page-header__info {
-    display: block;
-    margin: 0;
-    margin-left: auto;
-    padding-top: 18px;
-    padding-bottom: 18px;
-
-    line-height: 24px;
-    color: $main-color;
-    text-decoration: none;
-  }
 }
 
 @media (min-width: $width-desktop) {
   .page-header {
     @include indent;
     width: $width-desktop;
-  }
-
-  .page-header__info {
-    padding-top: 18px;
-    padding-bottom: 18px;
   }
 }

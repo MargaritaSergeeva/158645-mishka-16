@@ -26,6 +26,10 @@
   cursor: pointer;
 }
 
+.main-nav__info {
+  display: none;
+}
+
 @media (max-width: $width-only-mobile) {
   .main-nav--opened {
     .main-nav__toggle {
@@ -102,6 +106,18 @@
     margin-left: auto;
     margin-right: 0;
   }
+
+  .main-nav__info {
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    line-height: 24px;
+    color: $main-color;
+    text-decoration: none;
+  }
 }
 
 @media (min-width: $width-desktop) {
@@ -123,5 +139,10 @@
     margin-left: auto;
     margin-right: 0;
     order: 3;
+  }
+
+  .main-nav__info {
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 }
