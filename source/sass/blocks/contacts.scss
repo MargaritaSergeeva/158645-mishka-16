@@ -143,6 +143,8 @@
 
 @media (min-width: $width-tablet) {
   .contacts {
+    display: flex;
+    flex-direction: column;
     padding-bottom: 57px;
   }
 
@@ -244,11 +246,13 @@
   .contacts {
     position: relative;
 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 1050px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 93px;
-    padding-right: 526px;
     padding-bottom: 105px;
 
     &::before {
@@ -271,6 +275,7 @@
     width: auto;
     margin: 0;
     padding: 0;
+    padding-bottom: 130px;
 
     &::before {
       display: none;
@@ -295,7 +300,6 @@
 
   .contacts__address-wrapper {
     flex-direction: column;
-    margin-bottom: 79px;
     padding-left: 175px;
   }
 
@@ -308,11 +312,8 @@
   }
 
   .contacts__map {
-    position: absolute;
-    top: 93px;
-    right: 1px;
-
     width: 525px;
+    margin-bottom: 0;
 
     iframe {
       min-width: 100%;
@@ -336,8 +337,11 @@
   }
 
   .contacts__write-us-wrapper {
+    z-index: 2;
+
     width: 525px;
     margin: 0;
+    margin-top: -52px;
     padding-left: 175px;
   }
 
