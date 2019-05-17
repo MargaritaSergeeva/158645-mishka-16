@@ -37,22 +37,22 @@
 
     &:hover,
     &:focus {
-      .logo__image {
+      .page-footer__logo-image {
         fill: #46c1ae;
       }
     }
 
     &:active {
-      .logo__image {
+      .page-footer__logo-image {
         fill: rgba(#46c1ae, 0.3);
       }
     }
+  }
 
-    .logo__image {
+  .page-footer__logo-image {
       width: 102px;
       height: 34px;
     }
-  }
 
   .page-footer__social {
     margin-bottom: 0;
